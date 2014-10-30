@@ -7,123 +7,24 @@
         <title>Neely Kartha</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/syntax.css">
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-            <h1 class="title">{Neely's Newbie Notes}</h1>
-      
+     <h1 class="title"><a href="http://nkartha2.github.io/">Neely's Notes</a></h1>
 <div id="home">
-<!--   <h3 class="About">About</h3> -->
   <h3>Posts</h3>
-  <hr class="short">
+<!--   <hr class="short"> -->
   <ul class="posts">
-    
       <li>
-        <h2>
-        <span class="post-date">May 17, 2014</span></h2>
-        <h3>First Post: Being Mobile First : Length units</h3>
+        <h2><span class="post-date">May 17, 2014</span></h2>
 
-<p>People in the design community have not been hinting at being mobile first so much as yelling it through the streets or sagely telling newcomers this phrase like it is a cautionary tale. As a newbie myself, I’ve heard it and now I need to practice it. But HOW? 
+        <h3><a href="firstpost.html">First Post: Being Mobile First : Length units</a></h3>
 
-Here’s what I’ve picked up on (if you see or hear something, incorrect or notice something missing in this picture, SAY SOMETHING…. Please:</p>
-<div class="firstcontact">
-<a href=”mailto:nkartha2@gmail.com”>Email</a>
-<a href="http://twitter.com/intent/tweet?screen_name=neelykartha">Twitter</a>
-</div>
+<p>People in the design community have not been hinting at being mobile first so much as yelling it through the streets or sagely telling newcomers this phrase like it is a cautionary tale. As a newbie myself, I’ve heard it and now I need to practice it. But HOW? </p>
 
 
-<h4>1.  Font-sizing: relative font-sizing</h4>
-
-<ol class="relabsdef">
-  <li>Definitions: </li>
-  <li>Relative length: amount of space that the content consumes is in relation to another length</li>
-<li>Absolute length: fixed size that does not change according to screen size;  maintains size according to the prescribed unit value </li>
-</ol>
-
-<p>
-Purpose: 
-Using relative lengths will help scale between different output devices/mediums; for example, using relative units will help manage space between desktop, laptop, and mobile phone; used for “responsive design” 
-
-<!-- Who cares about absolute lengths if you’ve got relative, right? WRONG. They’re not the best for responsive design but they can still be used for media queries, CSS for print media, in cases where the output medium is known, and to read old-school CSS  -->
-
-
-Types: 
-Relative : em, rem, ex, vh, vw, vmin, vmax 
-Absolute: px, inches, millimeters, centimeters, points, picas </p>
-
-<div id="maincontent">
-<ol>
-<h6><li>Ex:</li></h6>
-<h5><li>Etymology:</h5> X-height</li>
-
-<h5><li>Value: </h5>based on the size of the element’s font’s x size; does not resize with the window; heavily dependent on font-family </li>
-
-<h5><li>Pros: </h5>possibly helpful in typesetting – fonts with the same ex size might be more legible 
-……………..help me out with more uses of this unit please </li></ol>
-
-<ol>
-  <h6><li>Em: </li></h6>
-  <h5><li>Etymology: </h5>Why is it called “em”? This used to be based on the width of the element’s typeface’s capital letter “M”; now it is based on vertical space a letter consumes – tangerine </li>
-
-<h5><li>Value: </h5>Em length unit depends on the font size being used for the element. 1em is equal to the inherent font size. For example, most browsers default the font size to 16px, so 1em is equal to 16px until declared otherwise; therefore, it is not dependent on font-family but on font-size </li> 
-
-
-<h5><li>Pros: </h5>
--used in responsive design
--easy to manage space according to font size using ems – Kaplan </li>
-
-<h5><li>Look out!</h5>
-*compounding effect: when elements are nested, one element within another, then the parent element font size declared in ems will affect the child element’s font size.  </li></ol>
-
-
-<ol>
-<h6><li>Rem:</li></h6>
-<h5><li>Etymology:</h5> root em </li>
-<h5><li>Value: </h5>rems are relative to the font-size of the html root element. </li>
-
-<h5><li>Pros: </h5>This prevents the compounding effect because all following font sizes are relative to the root element rather than the parent element like we saw with ems.  </li>
-
-<h5><li>Look out!....kinda- </h5>not used in old browsers like IE 8.0, iOS Safari 3.2, Opera mini 5.0-7.0 (fallback would be to use px)</li></ol>
-
-<ol>
-<h6><li>Vh, vw, vmin, vmax </li></h6>
-
-<h5><li>Etymology:</h5> vw: viewport width 
-  vh: viewport height
-  vmin: viewport minimum
-vmax: viewport maximum</li>
-
-<h5><li>Value: </h5><ol>1vw is equal to 1% of the viewport width 
-1 vh is equal to 1% of the viewport height 
-vmin is dependent on the shortest dimension whether it is width or height
-vmax is dependent on the longest dimension whether it is width or height</li>
-
-<h5><li>Pros: </h5>
-no compounding effect; based on root element</li>
-
-<h5><li>Lookout!: </h5>Limited browser support </li>
-</ol>
-
-</div>
-
-<h6>Resources/Non-Newbies</h6>
-<ul class="references">
-  <li><a href=http://css-tricks.com/why-ems/>CSS Tricks Why ems</a></li>
-<li><a href=http://www.w3.org/TR/css3-values/#font-relative-lengths>w3.org</a></li>
-<li><a href=http://css-tricks.com/the-lengths-of-css/>CSS Tricks Lengths of CSS</a></li>
-<li><a href=http://teamtreehouse.com/library/css-foundations/values-and-units/relative-length-units-2>Team Treehouse</a></li>
-<li><a href=http://www.blooberry.com/indexdot/css/syntax/units/rellength.htm>Blooberry</a></li>
-<li><a href=http://www.adamkaplan.me/projects/units-of-measure.html>Adam Kaplan Blog Units of Measure</a></li>
-<li><a href=http://www.sitepoint.com/new-css3-relative-font-size/>Sitepoint</a></li>
-<li><a href=http://codeitdown.com/responsive-font-size-css/>Codeitdown</a></li>
-<li><a href=http://v1.jontangerine.com/log/2007/09/the-incredible-em-and-elastic-layouts-with-css>Incredible em and elastic layouts with css</a></li>
-<li><a href=http://sbpoley.home.xs4all.nl/webmatters/emex.html>Em Ex</a></li>
-</ul>
-  
-</p>
-      </li>
-  </ul>
 </div>
           <div class="footer">
             <div class="contact">
