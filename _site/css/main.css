@@ -55,12 +55,11 @@ body {
     margin: 2%;
     float: right;}
 
-h1{
-font-family: 'Vollkorn', serif;
-  /*font-family: 'Lobster', cursive;*/
+h1{font-family: 'Vollkorn', serif;
 /* 'Indie Flower', cursive;*/
   text-align: left;
   font-size: 2.85rem;
+  float:left;
      }
 
 h2{margin-top: 10%;
@@ -68,7 +67,9 @@ h2{margin-top: 10%;
 
 h4{text-decoration: underline;}
 
-h3{margin:1%;
+h3{
+  display: block;
+  margin:1%;
   color: #886565;
   font-size: .85rem;}
 
