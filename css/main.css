@@ -65,16 +65,23 @@ h1{font-family: 'Vollkorn', serif;
 h2{margin-top: 10%;
   color: #886565;}
 
-h4{text-decoration: underline;}
-
 h3{
   display: block;
   margin:1%;
   color: #886565;
   font-size: .85rem;}
 
+h4{text-decoration: underline;}
+
+
+h5{ 
+  color: #886565;
+  font-size: 1.25rem;}
+
 h6{color:red;
   font-size: 1rem;}
+
+
 
 
 a         { color: #000;
@@ -88,6 +95,29 @@ a:visited { color: #000; }
 
 .sitecontent li{list-style-type: none;
                 margin-top: 5%;}
+
+.asgn1 img{width:20%;
+          max-height: 25%;}
+
+/*****************************tables*******************/
+
+#css-table{
+          display: inline-block;
+          width: 100%;
+          font-size: .85rem;
+          text-align: left;}
+
+#css-table img{width: 50%;
+              }
+
+#css-table tr, td{
+    padding:2%;
+     border: 1px #A9A9A9;
+}
+
+#css-table td{color:#000;}
+
+#css-table th { color: #886565;}
 
 
 
