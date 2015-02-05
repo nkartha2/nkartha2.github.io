@@ -5,85 +5,88 @@
 /*****************************************************************************/
 
 /* Global Reset */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;}
+
+
 * {
   margin: 0;
   padding: 0;
 }
-
 html, body { 
           height: 100%; }
-
 body {
   font-family: 'Vollkorn', serif;
   margin: 0 3% 0;
-/*  text-align: center;
-*/}
+  }
 
-h1{font-family: 'Indie Flower', cursive;
-  display: inline-block;
-  text-decoration: underline;
-  font-size: 3rem;
+/***Clearfix by Nicolas Gallagher***/
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display:table;
+}
+
+.clearfix:after{
+  clear:both;
+}
+
+.clearfix{
+  *zoom:1;
+}
+
+/*******/
+
+.branding,.siteinfo.siteinfo img{display: inline-block;}
+
+.branding{
+          float:left;
+        margin: 2%;}
+/*
+.siteinfo{
+          text-align: right;}*/
+
+.siteinfo img{
+    height:5%;
+    width:5%;
+    margin: 2%;
+    float: right;}
+
+h1{
+font-family: 'Vollkorn', serif;
+  /*font-family: 'Lobster', cursive;*/
+/* 'Indie Flower', cursive;*/
+  text-align: left;
+  font-size: 2.85rem;
      }
 
+h2{margin-top: 10%;
+  color: #886565;}
 
+h4{text-decoration: underline;}
 
+h3{margin:1%;
+  color: #886565;
+  font-size: .85rem;}
 
 h6{color:red;
-    font-size: 1rem;}
+  font-size: 1rem;}
 
-   
-p { margin: .75rem 0; }
 
-a         { color: #000; }
+a         { color: #000;
+            text-decoration: none; }
 a:hover   { color: #000; }
 a:visited { color: #000; }
 
-.relabsdef{list-style-type: none;}
+.sitecontent{
+              margin: 0% 20% 0;
+            }
 
-#maincontent ol{list-style-type: none;}
+.sitecontent li{list-style-type: none;
+                margin-top: 5%;}
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-
-.posts {
-  list-style-type: none;
- /* margin-bottom: 2em;*/
-}
-
-.posts li {
-  line-height: 1.75em;
-}
-
-.posts span {
-  color: #aaa;
-  font-family: 'Vollkorn', serif;
-  font-size: 80%;
-}
-
-img{
-    height:5%;
-    width:5%;}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-/*.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}*/
 
 
