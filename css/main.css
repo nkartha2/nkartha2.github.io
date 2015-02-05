@@ -103,21 +103,26 @@ a:visited { color: #000; }
 
 #css-table{
           display: inline-block;
-          width: 100%;
+          width: 95%;
           font-size: .85rem;
           text-align: left;}
 
-#css-table img{width: 50%;
-              }
-
-#css-table tr, td{
-    padding:2%;
+#css-table tr, td, th{
+    padding:1% 2% 0;
      border: 1px #A9A9A9;
 }
 
 #css-table td{color:#000;}
 
-#css-table th { color: #886565;}
+#css-table th { 
+  /*  padding:0;
+    margin:0;*/
+    color: #886565;}
+
+#css-table td img{width: 100%;
+              padding:0;
+              margin:0;
+              }
 
 
 
