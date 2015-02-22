@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta utf="charset-8">
+		<title>HTML &amp CSS Evaluation</title>
+		  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div id="wrapper">
+		<div class="branding">
+		<header>
+			<a href="http://nkartha2.github.io/">Neely's Notes</a>
+			<a href="http://nkartha2.github.io/"><img src="img/github.png"></a>
+		</header>
+		</div>
+			<section class="group">
+				<h1>Display Modes</h1>
+				<div class="column third">
+					<dl>
+						<dt>Inline</dt>
+						<dd>Can't assign width or margins</dd>
+						<dd>Element only takes up as much space as the content</dd>
+						<dd>Doesn't disrupt the document flow</dd>
+						<dd>Naturally inline elements examples: span, b, td, a, img</dd>
+					</dl>
+				</div>
+				<div class="column third">
+					<dl>
+						<dt>Block</dt>
+						<dd>Element takes up full available width of parent element</dd>
+						<dd>Doesn't disrupt the document flow</dd>
+						<dd>Naturally block elements examples: h1, p, ul, table</dd>
+					</dl>
+				</div>
+				<div class= "column third">
+					<dl>
+						<dt>Inline-Block</dt>
+						<dd>Has the block mode quality of being able to assign width and margins</dd>
+						<dd>Has the inline mode quality of not taking entire width of viewport</dd>
+						<dd>Can use vertical align property with this display mode</dd>
+					</dl>
+				</div>
+			</div>
+			</section>
+			<section class="group">
+				<h1>Font Sizing</h1>
+					<dl>
+						<div class="column half">
+							<dt>Em Units</dt>
+								<dd>Em units offer better control. However, em fall into the claws of the compounding effect. The compounding effect happens with nesting elements (elements contained in other elements). Em length unit depends on the font size being used for the element. 1em is equal to the inherent font size. For example, most browsers default the font size to 16px, so 1em is equal to 16px until declared otherwise; therefore, it is not dependent on font-family but on font-size
+								</dd>
+						</div>
+						<div class="column half">
+							<dt>Rem Units</dt>
+								<dd>Rem units are relative to the root element of page so they are not affected by inheritance or the compounding effect. However, they offer less control as ems.
+								</dd>
+						</div>
+					</dl>
+					<!-- <ul>
+						<li>Font Family</h2><li>
+						<li><h3>Web Fonts</h3></li>
+						<li>Web fonts eliminate the need for installed fonts</li>
+					</ul> -->
+			</section>
+			<section>
+				<h1>Box Model</h1>
+				<img src="img/boxmodel.jpg">
+			</section>
+			<section>
+				<h1>Positioning</h1>
+					<dl class="column third">
+						<dt>Relative</dt>
+							<dd>Relative positioned elements don't affect the layout of surrounding elements.They are relative to their original position and still within normal document flow.
+							</dd> 
+					</dl>
+					<dl class="column third">
+						<dt>Fixed</dt>
+							<dd>Fixed positioned elements are positioned relative to the browser window. They are out of the normal document flow and don't affect other elements. The github icon is in fixed position.
+							</dd>
+					</dl>
+					<dl class="column third">
+						<dt class="relative">Absolute</dt>
+							<dd class="absolute">Absolute positioned elements are relative to the first parent that has a relative position. They are out of the normal document flow and don't affect surrounding elements. These elements usually need height defined otherwise the height tends to collapse. This text is in absolute position and the parent (the absolute data term tag) is in relative position. 
+							</dd>
+					</dl>
+			</section>
+			<section>
+				<h1>CSS Layout</h1>
+					<dl class="group">
+						<div class="left">
+							<dt>Floats</dt>
+								<dd>Floats are used to take elements out of the document flow and move them horizontally. Surrounding elements flows or wraps around element. Floats are within the document flow. Therefore, surrounding elements will move up adjacent to the floats (their tendency is to wrap). Another problem that arises when using floats is the collapse of the parent element's height. This column and the right column are positioned using floats and the clearfix property.
+								</dd>
+						</div>
+						<div class="right">
+							<dt>Clearfix</dt>
+								<dd>
+									The clearfix property forces parent elements to clear children. 
+								</dd>
+						</div>
+					</dl>
+			</section>
+			<ul>
+				<h1>References</h1>
+				<li><a href="http://adamkaplan.me/projects/position-properties.html">Position Properties</a></li>
+				<li><a href="http://css-tricks.com/all-about-floats/">All About Floats</a></li>
+				<li><a href="http://css-tricks.com/confused-rem-em/">Confused About REM and EM?</a></li>
+				<li><a href="http://www.w3schools.com/html/html_blocks.asp">HTML Blocks</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
