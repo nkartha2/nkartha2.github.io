@@ -152,10 +152,6 @@ header.project nav ul li a{
 	color: #fcfcfc;
 }
 
-/*header nav ul li:last-child h3{
-	display: none;
-}*/
-
 header nav ul li span{
 	display: block;
 	width: 19px;
@@ -228,31 +224,15 @@ button{
 
 /*other colors #30D2AC ,#3273FA,*/
 
-/*.gigscout{
-	background: url(../img/band.jpg) center center fixed;
-	background-size: cover;
-	min-height: 470px;
-}*/
-
 .atmos{
 	background:url(../img/atmoshero.jpg) center -150px fixed;
 	background-size: cover; 
 	min-height: 520px;
 }
-
-/*header.navproject nav{
-	background-color: transparent;
-	position: static;
-}*/
-
-/*.navproject nav ul li{
-	color: #fcfcfc;
-}*/
 /*************************project*************************/
 
 .projecthome{
 	text-align: center;
-	/*min-height: 450px;*/
 }
 
 .projecthome img{
@@ -279,12 +259,7 @@ button{
 .col{
 	float:left;
 	width: 25%;
-	/*margin:1%;*/
 }
-
-/*.col1of4{
-	text-align: left;
-}*/
 
 .col h1{
 	margin:0;
@@ -435,12 +410,8 @@ section:nth-of-type(3){
 
 .home h1, 
 .home h2{
-	/*-webkit-transform: translateY(50%);
-	-moz-transform: translateY(50%);
-	transform: translateY(50%);*/
 	margin: 0;
 	padding:0;
-	/*text-align: center;*/
 }
 
 .home h1{
@@ -468,11 +439,17 @@ section:nth-of-type(3){
 
 /*************************work*************************/
 
-/*.work{
-	background-color: #000;
-}*/
+.work{
+	padding-top:10%;
+	padding-bottom:10%;
+	background: -webkit-linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
+	background: -o-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
+	background: -moz-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
+	background: linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
+}
 
 .work h1{
+	color:#fcfcfc;
 	font-size: 2em;
 }
 
@@ -494,28 +471,26 @@ section:nth-of-type(3){
 	vertical-align: top;
 	text-align: center;
 	display: inline-block;
-	background-color: #000;
+	/*background-color: #000;*/
 	width: 30%;
 	margin-right: 4%;
 	height:20em;
 }
-
+/*
 .work li:first-child:hover{
 	background-color:#38a368;
 }
 
 .work ul li:nth-of-type(2):hover{
 	background-color:#309dd4;
-	/*background-color:#6A5AF8;*/
-}
+}*/
 
-.work ul li:nth-of-type(3):hover{
+/*.work ul li:nth-of-type(3):hover{
 	background: -webkit-linear-gradient(#f70, #f30); 
 	background: -o-linear-gradient(#f70, #f30); 
 	background: -moz-linear-gradient(#f70, #f30);  
 	background: linear-gradient(#f70, #f30);  
-	/*background-color: #f30;*/
-}
+}*/
 
 .work ul li:nth-of-type(3):hover h5{
 	color:#000;
@@ -544,10 +519,10 @@ section:nth-of-type(3){
 .testimonial{
 	/*color:#E6E7F6;*/
 	/*text-align: center;*/
-	padding-top: 5em;
+	padding-top: 3%;
 	margin-bottom:5%;
-	margin-top:10%;
-	color:#000;
+	/*margin-top:10%;*/
+	color:#fff;
 	background-color: #000;
 	/*background-color: #9478F1;*/
 }
@@ -599,6 +574,11 @@ ul.bxslider{
 
 /*************************about*************************/
 
+.about{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
 .about h1{
 	font-size: 2em;
 	margin:0;
@@ -629,6 +609,7 @@ ul.bxslider{
 }
 
 aside{
+	padding:5%;
 	width: 45%;
 	float:left;
 }
