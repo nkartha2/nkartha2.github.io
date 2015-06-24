@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+
+////////navigation animation
+	$('a').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	return false;
+	});
+
 var waypoint  = new Waypoint({
 		element: $('.work'),
 		handler:function(direction){
@@ -7,9 +16,6 @@ var waypoint  = new Waypoint({
 			console.log(direction);
 			if(direction==='down'){
 				$('header').addClass('header');
-				// $('header nav ul li a').animate({color:'#000'},800);
-				// $('header.project nav button span').animate({backgroundColor: '#000'
-				//				}, 800);
 			}else if(direction==='up'){
 				$('header').removeClass('header');
 			}
@@ -49,13 +55,9 @@ var waypoint  = new Waypoint({
 		$('.work ul li:nth-of-type(3) a img').attr('src','img/atmoslogo.png');
 	});
 
+////////slider for testimonial
+
 	$('.bxslider').bxSlider();
 
 
-	$('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 500);
-	return false;
-	});
 });
