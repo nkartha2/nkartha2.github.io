@@ -60,17 +60,24 @@ ul li:last-child{
 
 header nav ul li:hover a
 {
-	/*color:#fff;*/
 	color:#6A5AF8;
 }
 
-header.project nav ul li:hover a{
+/*header.project nav ul li:hover a{
 	color:#ffea0a;
 }
 
 header.project nav ul button:hover span{
-	/*background-color: #000;*/
 	background-color:#ffea0a;
+}*/
+
+.header{
+	background-color: #fff;
+	color:#000;
+}
+
+.header nav ul li{
+	color:#6A5AF8 ;
 }
 
 .otherwork a:hover{
