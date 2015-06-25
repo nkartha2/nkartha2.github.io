@@ -204,18 +204,19 @@ button{
 	border:none;
 }
 
-.site{
+.view{
+	display: none;
+}
+
+a.site{
+	float:left;
 	display: inline-block;
 	color:#131313;
-	/*color:#6A5AF8;*/
 	margin-top:1.5%;
-	/*padding-top: 1%;*/
 	margin-left: 1%;
-	/*padding:1%;*/
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	font-size: 1.1em;
-	/*background-color:#131313;*/
 	border:none;
 }
 
@@ -230,8 +231,6 @@ button{
 	background: -moz-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
 	background: linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
 }
-
-/*other colors #30D2AC ,#3273FA,*/
 
 .atmos{
 	background:url(../img/atmoshero.jpg) center -150px fixed;
@@ -491,26 +490,6 @@ section:nth-of-type(3){
 	margin-right: 4%;
 	height:20em;
 }
-/*
-.work li:first-child:hover{
-	background-color:#38a368;
-}
-
-.work ul li:nth-of-type(2):hover{
-	background-color:#309dd4;
-}*/
-
-/*.work ul li:nth-of-type(3):hover{
-	background: -webkit-linear-gradient(#f70, #f30); 
-	background: -o-linear-gradient(#f70, #f30); 
-	background: -moz-linear-gradient(#f70, #f30);  
-	background: linear-gradient(#f70, #f30);  
-}*/
-
-/*.work ul li:nth-of-type(3):hover h5{
-	color:#000;
-}*/
-	
 
 .work ul li img{
 	width: 35%;
@@ -531,15 +510,24 @@ section:nth-of-type(3){
 
 /*************************testimonial*************************/
 
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	bottom:15%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a{
+	background-color: #fff;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background-color:#6A5AF8;
+}
+ 
+
 .testimonial{
-	/*color:#E6E7F6;*/
-	/*text-align: center;*/
 	padding-top: 3%;
 	margin-bottom:5%;
-	/*margin-top:10%;*/
 	color:#fff;
 	background-color: #000;
-	/*background-color: #9478F1;*/
 }
 
 .bx-wrapper{
@@ -601,6 +589,8 @@ ul.bxslider{
 
 .about h2
 ,aside h2{
+	margin-top: 2%;
+	/*text-align: center;*/
 	font-size: 1.3rem;
 }
 
@@ -611,26 +601,32 @@ ul.bxslider{
 }
 
 .about p{
+	margin-top: 2%;
 	font-size: 0.8em;
 }
 
 .about img{
 	margin-top: 5%;
-	width: 30%;
+	width: 31%;
 	margin-left: 15%;
 	float:right;
 }
 
 aside{
-	margin-top:5%;
+	margin-left: 5%;
+	margin-top:2%;
 	width: 45%;
 	float:left;
+}
+
+aside{
+	text-align: center;
 }
 
 .about ul li{
 	display: inline-block;
 	margin: 3% 0 4%;
-	width: 20%;
+	width: 15%;
 	min-height: 80px;
 }
 
@@ -666,6 +662,21 @@ aside{
 
 .about #travel{
 	background: url(../img/travel.png) no-repeat;
+	background-size: 80px;
+}
+
+.about #travel:hover{
+	background: url(../img/travel-hover.png) no-repeat;
+	background-size: 80px;
+}
+
+.about #designation{
+	background: url(../img/designation.png) no-repeat;
+	background-size: 80px;
+}
+
+.about #designation:hover{
+	background: url(../img/designation-hover.png) no-repeat;
 	background-size: 80px;
 }
 
@@ -844,6 +855,13 @@ footer ul li:last-child{
   	padding-top: 7%;
   }
 
+  .about img{
+	width: 70%;
+	float:none;
+	display: block;
+	margin:0;
+	/*float: left;*/
+	}
 
 	footer h2,
   	footer ul{

@@ -6,25 +6,13 @@ $(document).ready(function(){
 			console.log('triggered');
 			console.log(direction);
 			if(direction==='down'){
-				$('header').append("<a href='#' class='site'>View Site</a>");
-				$('header').append("<a href='#' class='site'>View on Github</a>");
+				$('a.view').addClass("site");
 				$('header img').attr({src:"img/logo.png"});
 				$('header').addClass('header');
-				// $('header').css('position', 'fixed');
-				// $('header').animate({backgroundColor: '#fff'
-				// 						}, 800);
-				// $('header nav ul li a').animate({color:'#000'},800);
-				// $('header nav ul li a').hover().css('color','#6A5AF8');
-				// $('header.project nav button span').animate({backgroundColor: '#000'
-				// 						}, 800);
 			}else if(direction==='up'){
-				$('.site').remove();
+				$('a.view').removeClass('site');
 				$("<a href='#'>View Site</a>").remove();
 				$('header img').attr({src:"img/logow.png"});
-				// $('header').animate({backgroundColor: 'transparent'
-				// 						}, 400);
-				// $('header.project nav ul li a').animate({color:'#fff'},400);
-				// $('header.project nav ul li span').animate({backgroundColor:'#fff'},400);
 				$('header').removeClass('header');
 			}
 		},
