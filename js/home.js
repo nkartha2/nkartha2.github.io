@@ -1,23 +1,23 @@
 $(document).ready(function(){
 
 
-////////navigation animation
+////navigation animation 
 	$('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 500);
-	return false;
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 500);
+    return false;
 	});
 
 /////waypoint for header transition
 	var waypoint  = new Waypoint({
 		element: $('.work'),
 		handler:function(direction){
-			console.log('triggered');
-			console.log(direction);
 			if(direction==='down'){
+			////changing header background color 
 				$('header').addClass('header');
 			}else if(direction==='up'){
+			////changing header back to transparent 
 				$('header').removeClass('header');
 			}
 		},
@@ -25,7 +25,7 @@ $(document).ready(function(){
 	});
 
 
-////changing work images to gifs 
+////changing work images on mouseenter 
 	/////world bicycle relief image to gif 
 	$('.work li:nth-of-type(1)').mouseenter(function(){
 			$('.work ul li:first-child a img').attr('src','img/biker4.gif');
@@ -45,12 +45,16 @@ $(document).ready(function(){
 			$('.work ul li:nth-of-type(2) a img').attr('src','img/gigscoutlogo2.png').css('width','30%');
 		});
 
-	///atmos image to gif 
+	///atmos image  
 	$('.work li:nth-of-type(3)').mouseenter(function(){
-		$('.work ul li:nth-of-type(3) a img').fadeIn(1000,function()
-			{$(this).attr('src','img/atmoslogohover.png');
+		// $('.work ul li:nth-of-type(3) a img').fadeIn(1000,function()
+		// 	{$(this).attr('src','img/atmoslogohover.png');
+		// 	});
+		// });
+	$('.work li:nth-of-type(3) img').hide();
+	$('.work li:nth-of-type(3) img').fadeIn(1200);
 			});
-	});
+
 
 	$('.work li:nth-of-type(3)').mouseleave(function(){
 		$('.work ul li:nth-of-type(3) a img').attr('src','img/atmoslogo.png');
@@ -59,6 +63,4 @@ $(document).ready(function(){
 ////////slider for testimonial
 
 	$('.bxslider').bxSlider();
-
-
 });

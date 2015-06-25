@@ -55,139 +55,29 @@ ul li:last-child{
 	margin:0;
 }
 
-/*************************header*************************/
-.project nav a{
-	color: #fcfcfc;
-}
-
-.project nav li:hover a
-,.otherwork a:hover{
-	color:#ccc;
-}
-
-header nav ul li:hover a
-{
-	color:#6A5AF8;
-}
-
-header nav ul li:hover span{
-	background-color: #ccc;
-}
-
-.header{
-	background-color: #fff;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-in;
-}
-
-.header nav ul li a{
-	color:#000;
-}
-
-header.header nav ul li span{
-	background-color: #000;
-}
-
-header.header nav ul li:hover span{
-	background-color: #6A5AF8;
-}
-
-.header nav ul li:hover a{
-	color:#6A5AF8 ;
-}
-
-a.site:hover{
-	color:#6A5AF8;
-}
-
-
-.overview button:hover
-,footer ul li:hover
- {
-	/*color:#fff;*/
-	background-color:#6A5AF8;
-}
-/*************************header*************************/
-
-header{
-	width: 100%;
-	position: fixed;
-	top:0;
-	z-index: 999;
-	/*background-color: #fff;*/
-}
-
-header img{
-	padding-top:1%;
-	padding-bottom: 1%;
-	float:left;
-	width: 3%;
-}
-
-header nav{
-	width: 25%;
-	float:right;
-	text-align: right;
-}
-
-header nav ul li{
-	margin-top: 4%;
-	padding:2% 2% 2%;
-	display: inline-block;
-	text-transform: uppercase;
-}
-
-.otherwork{
-	display: none;
-	width: 100%;
-	color:#fff;
-	padding-left: 5%;
-	text-transform: uppercase;
-	background-color: #000;
-}
-
-.otherwork h3{
-	display: inline-block;
-	margin:1%;
-}
-
-.otherwork a{
-	color:#fff;
-	padding:1%;
-}
-
-header nav ul li a{
-	color:#000;
-}
-
-header.project{
-	margin:0;
-}
-
-
-header nav ul li span{
-	display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px 0;
-	/*border-radius: px;*/
-	background-color: #fff;
-	z-index: 99999;
-	cursor: pointer;
-}
-
-header nav button{
-	padding:0.5%;
-	position: relative;
- 	top: 7px;
-}
-
 /*************************buttons*************************/
 
 button{
 	background-color: transparent;
 	border:none;
+}
+
+header nav button{
+	position: absolute;
+	top:35%;
+	right:2%;
+}
+
+
+header nav button span{
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	/*border-radius: px;*/
+	background-color: #fcfcfc;
+	z-index: 99999;
+	cursor: pointer;
 }
 
 .overview button
@@ -225,6 +115,116 @@ a.site{
 	float:right;
 }
 
+/*************************hover*************************/
+.project nav a{
+	color: #fcfcfc;
+}
+
+.project nav li:hover a
+,.otherwork a:hover{
+	color:#ccc;
+}
+
+header nav ul li:hover a
+{
+	color:#6A5AF8;
+}
+
+header nav button:hover span{
+	background-color: #ccc;
+}
+
+a.site:hover{
+	color:#6A5AF8;
+}
+
+.overview button:hover
+,footer ul li:hover
+ {
+	background-color:#6A5AF8;
+}
+
+/*************************header class*************************/
+.header{
+	background-color: #fcfcfc;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-in;
+}
+
+.header nav ul li a{
+	color:#000;
+}
+
+.header nav ul li:hover a{
+	color:#6A5AF8 ;
+}
+
+header.header  nav button span{
+	background-color: #000;
+}
+
+header.header nav button:hover span{
+	background-color: #6A5AF8;
+}
+/*************************header*************************/
+
+header{
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 999;
+}
+
+header img{
+	padding-top:1%;
+	padding-bottom: 1%;
+	float:left;
+	width: 3%;
+}
+
+header nav{
+	width: 25%;
+	float:right;
+	text-align: right;
+}
+
+header nav ul li{
+	margin-top: 4%;
+	padding:2% 2% 2%;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.otherwork{
+	display: none;
+	width: 100%;
+	color:#fcfcfc;
+	padding-left: 5%;
+	text-transform: uppercase;
+	background-color: #000;
+}
+
+.otherwork h3{
+	display: inline-block;
+	margin:1%;
+}
+
+.otherwork a{
+	color:#fcfcfc;
+	padding:1%;
+}
+
+header nav ul li a{
+	color:#000;
+}
+
+/**************************************************project*************************/
+
+header.project{
+	margin:0;
+}
+
 .bgd{
 	background: -webkit-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
 	background: -o-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
@@ -237,7 +237,6 @@ a.site{
 	background-size: cover; 
 	min-height: 520px;
 }
-/*************************project*************************/
 
 .projecthome{
 	text-align: center;
@@ -364,7 +363,7 @@ section:nth-of-type(3){
 .fed{
 	padding-top:10%;
 	padding-bottom:10%;
-	background-color: #fff;
+	background-color: #fcfcfc;
 }
 
 
@@ -467,19 +466,12 @@ section:nth-of-type(3){
 .work h4{
 	color:#fcfcfc;
 	font-family: 'Lato', sans-serif;
-	/*color:#000;
-	background-color: #fff;*/
-	/*border:solid 3px #000;*/
 }
 
  .work h5{
-	color:#fff;
+	color:#fcfcfc;
 	font-family: 'Lato', sans-serif;
 }
-
-/*.work article{
-	background-color: #000;
-}*/
 
 .work ul li{
 	vertical-align: top;
@@ -515,7 +507,7 @@ section:nth-of-type(3){
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a{
-	background-color: #fff;
+	background-color: #fcfcfc;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
@@ -526,7 +518,7 @@ section:nth-of-type(3){
 .testimonial{
 	padding-top: 3%;
 	margin-bottom:5%;
-	color:#fff;
+	color:#fcfcfc;
 	background-color: #000;
 }
 
@@ -538,7 +530,6 @@ section:nth-of-type(3){
 .testimonial blockquote{
 	width: 65%;
 	margin:0 auto;
-	/*text-align: center;*/
 }
 
 .testimonial h3{
@@ -551,19 +542,6 @@ section:nth-of-type(3){
 	min-height: 23em;
 	left: 55px;
 }
-/*.testimonial .bxslider{ 
-	background:url(../img/tinygrid.png) fixed;
-	background-size: cover;
-}
-
-ul.bxslider{
-	border:none;
-}*/
-
-/*.testimonial .slide{
-	background:url(../img/tinygrid.png) fixed;
-	background-size: cover;
-}*/
 
 .testimonial h1{
 	font-size: 2em;
@@ -613,78 +591,90 @@ ul.bxslider{
 }
 
 aside{
-	margin-left: 5%;
-	margin-top:2%;
-	width: 45%;
-	float:left;
+	/*margin-left: 5%;*/
+	text-align: center;
+	margin-top:1%;
+	width: 50%;
 }
 
-aside{
-	text-align: center;
+.about ul{
+	margin-bottom: 5%;
 }
 
 .about ul li{
 	display: inline-block;
 	margin: 3% 0 4%;
-	width: 15%;
-	min-height: 80px;
+	width: 18%;
+	min-height: 65px;
 }
 
 .about #colt{
 	background: url(../img/colt.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
 .about #colt:hover{
 	background: url(../img/colt-hover.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
 .about #adt{
 	background: url(../img/mudra.png) no-repeat;
-	background-size: 80px;
+	background-size: 52px;
 }
 
 .about #adt:hover{
 	background: url(../img/mudra-hover.png) no-repeat;
-	background-size: 80px;
+	background-size: 52px;
 }
 
 .about #film{
 	background: url(../img/film.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
 .about #film:hover{
 	background: url(../img/film-hover.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
 .about #travel{
 	background: url(../img/travel.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
 .about #travel:hover{
 	background: url(../img/travel-hover.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
 .about #designation{
 	background: url(../img/designation.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
 .about #designation:hover{
 	background: url(../img/designation-hover.png) no-repeat;
-	background-size: 80px;
+	background-size: 65px;
 }
 
+.about aside ul li{
+	position: relative;
+}
 
-.about aside ul li img{
-	width: 65%;
-	margin:0;
-	float: left;
+.about aside ul li h2{
+	display: none;
+}
+
+.about aside ul li:hover h2{
+	display: block;
+	color:#6A5AF8;
+	position: absolute;
+	top:65px;
+	left:0;
+	font-size: 0.8em;
+	left:-30px;
+	text-align: center;
 }
 
 /*************************footer*************************/
@@ -755,14 +745,33 @@ footer ul li:last-child{
 		width: 65%;
 		padding-top: 15%;
 	}
-
 }
 
-
-@media screen and (max-width:480px){
+@media screen and (max-width:770px){
 
 	header img{
 	width: 8%;
+	}
+
+	header nav button{
+		top:0;
+		right:0;
+	}
+
+	header nav{
+		position: absolute;
+		top:0;
+		right:0;
+		text-align: center;
+		background-color: #fcfcfc;
+	}
+
+	header nav ul li{
+		display: block;
+	}
+
+	header.project nav ul li a{
+		color:#000;
 	}
 
 	.atmos{
@@ -772,7 +781,7 @@ footer ul li:last-child{
 	.projecthome img{
 		width: 80%;
 		padding-top: 25%;
-		padding-bottom: 20%;
+		padding-bottom: 15%;
 	}
 
 	.col1of4{
@@ -816,7 +825,6 @@ footer ul li:last-child{
 	}
 
 	.gigscout{
-		/*text-align: center;*/
 		padding-bottom: 0;
 	}
 
@@ -860,7 +868,6 @@ footer ul li:last-child{
 	float:none;
 	display: block;
 	margin:0;
-	/*float: left;*/
 	}
 
 	footer h2,
@@ -868,8 +875,6 @@ footer ul li:last-child{
 	float:none;
 	display: block;
 	width: 100%;
-	/*width: 20%;*/
-	/*text-align: center;*/
 }
 
 }
