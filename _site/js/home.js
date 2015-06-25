@@ -9,7 +9,8 @@ $(document).ready(function(){
 	return false;
 	});
 
-var waypoint  = new Waypoint({
+/////waypoint for header transition
+	var waypoint  = new Waypoint({
 		element: $('.work'),
 		handler:function(direction){
 			console.log('triggered');

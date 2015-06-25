@@ -55,40 +55,50 @@ ul li:last-child{
 	margin:0;
 }
 
-/*************************hover*************************/
+/*************************header*************************/
+.project nav a{
+	color: #fcfcfc;
+}
 
+.project nav li:hover a
+,.otherwork a:hover{
+	color:#ccc;
+}
 
 header nav ul li:hover a
 {
 	color:#6A5AF8;
 }
 
-/*header.project nav ul li:hover a{
-	color:#ffea0a;
+header nav ul li:hover span{
+	background-color: #ccc;
 }
-
-header.project nav ul button:hover span{
-	background-color:#ffea0a;
-}*/
 
 .header{
 	background-color: #fff;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-in;
+}
+
+.header nav ul li a{
 	color:#000;
 }
 
-.header nav ul li{
+header.header nav ul li span{
+	background-color: #000;
+}
+
+header.header nav ul li:hover span{
+	background-color: #6A5AF8;
+}
+
+.header nav ul li:hover a{
 	color:#6A5AF8 ;
 }
 
-.otherwork a:hover{
-	/*color: #6A5AF8;*/
-	color:#ffea0a;
-}
-
 a.site:hover{
-	/*padding:1%;*/
 	color:#6A5AF8;
-	/*background-color: #000;*/
 }
 
 
@@ -155,9 +165,6 @@ header.project{
 	margin:0;
 }
 
-header.project nav ul li a{
-	color: #fcfcfc;
-}
 
 header nav ul li span{
 	display: block;
@@ -594,7 +601,6 @@ ul.bxslider{
 
 .about h2
 ,aside h2{
-	margin-top: 2%;
 	font-size: 1.3rem;
 }
 
@@ -605,26 +611,25 @@ ul.bxslider{
 }
 
 .about p{
-	/*width: 3%;*/
-	/*float:right;*/
 	font-size: 0.8em;
 }
 
 .about img{
+	margin-top: 5%;
 	width: 30%;
-	margin-left: 10%;
+	margin-left: 15%;
 	float:right;
 }
 
 aside{
-	padding:5%;
+	margin-top:5%;
 	width: 45%;
 	float:left;
 }
 
 .about ul li{
 	display: inline-block;
-	margin: 10% 2% 4%;
+	margin: 3% 0 4%;
 	width: 20%;
 	min-height: 80px;
 }
@@ -712,10 +717,10 @@ footer ul li:last-child{
 	}
 }
 
-@media screen and (max-width:1040px){
+@media screen and (max-width:1100px){
 	header nav
 	,header.project nav{
-		width: 40%;
+		width: 45%;
 	}
 
 	header img{
@@ -729,6 +734,11 @@ footer ul li:last-child{
 }
 
 @media screen and (max-width:940px){
+
+	header nav
+	,header.project nav{
+		width: 55%;
+	}
 
 	.projecthome img{
 		width: 65%;

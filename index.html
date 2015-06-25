@@ -15,9 +15,15 @@
 	</head>
 	<body>	
 		<header class="container clearfix">
-			<img src="img/logo.png">
+			<a href="http://nkartha2.github.io/">
+				<img src="img/logo.png">
+			</a>
 			<nav class="clearfix">
 				<ul>
+					<li>
+						<data-menuanchor="home">
+							<a href="#home">Home</a>
+					</li>
 					<li>
 						<data-menuanchor="firstPage">
 							<a href="#firstPage">Work</a>
@@ -34,10 +40,12 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="home">
+		<section class="home" id="home">
 			<h1>Neely</h1>
 			<h2>Front End Developer &amp; Designer</h2>
-			<div class="arrow-down">
+			<data-menuanchor="firstPage"><a href="#firstPage">
+				<div class="arrow-down">
+			</a>
 		</section>
 		<section class="work container" id="firstPage">
 			<h1>Work</h1>
@@ -72,7 +80,7 @@
 			</ul>
 		</section>
 		<section class="container about clearfix" id="secondPage">
-			<img src="img/Neely.jpg">
+			<img src="img/aboutpic.jpg">
 			<h1>About</h1>
 			<h2>I’m a front end developer &amp; designer and I love what I do.<h2>
 			<p>
