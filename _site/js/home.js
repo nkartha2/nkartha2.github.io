@@ -47,10 +47,6 @@ $(document).ready(function(){
 
 	///atmos image  
 	$('.work li:nth-of-type(3)').mouseenter(function(){
-		// $('.work ul li:nth-of-type(3) a img').fadeIn(1000,function()
-		// 	{$(this).attr('src','img/atmoslogohover.png');
-		// 	});
-		// });
 	$('.work li:nth-of-type(3) img').hide();
 	$('.work li:nth-of-type(3) img').fadeIn(1200);
 			});
