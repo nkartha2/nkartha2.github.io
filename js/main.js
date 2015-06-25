@@ -28,17 +28,30 @@ $(document).ready(function(){
 		offset:200
 	});
 
+  ////responsive nav 
 	var checkWindowWidth = function() {
      var projectnav = $('header.project nav ul li');
      var projectbutton = $('header.project nav button');
+     var white = true;
 
+  ////hamburger icon only  
     if (windowsize <= 779){
       projectnav.css('display','none');
       projectbutton.off("click");
 		  projectbutton.click(function() {
-      projectbutton.css('background-color','#000');
-      projectnav.slideToggle("slow");
-		});
+        if ($('header').hasClass('header') === false) {
+          console.log(projectnav.css('display'));
+    ////hamburger icon color toggling 
+          if (projectnav.css('display') == 'block') {
+            projectbutton.removeClass('activeb');
+          } else {
+            projectbutton.addClass('activeb');
+          }
+        }
+          projectnav.slideToggle("slow");
+		  });
+
+    ////hamburger icon with nav - show other work options 
     }else if(windowsize>=780){
       projectnav.css('display','inline-block');
       projectbutton.css('background-color','transparent');

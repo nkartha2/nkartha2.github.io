@@ -115,7 +115,7 @@ a.site{
 	float:right;
 }
 
-/*************************hover*************************/
+/*************************hover and active states*************************/
 .project nav a{
 	color: #fcfcfc;
 }
@@ -142,6 +142,10 @@ a.site:hover{
 ,footer ul li:hover
  {
 	background-color:#6A5AF8;
+}
+
+button.activeb span{
+	background-color: #000;
 }
 
 /*************************header class*************************/
@@ -749,12 +753,12 @@ footer ul li:last-child{
 @media screen and (max-width:770px){
 
 	header img{
-	width: 8%;
+	width: 6%;
 	}
 
 	header nav button{
 		top:0;
-		right:0;
+		right:1%;
 	}
 
 	header nav{
@@ -851,7 +855,7 @@ footer ul li:last-child{
 
   .description{
   	padding-top:18%;
-
+  	min-height: 300px
   }
 
   .description p{
@@ -875,6 +879,12 @@ footer ul li:last-child{
 	display: block;
 	width: 100%;
 }
+
+@media screen and (max-width:480px){
+
+	header img{
+	width: 8%;
+	}
 
 }
 
