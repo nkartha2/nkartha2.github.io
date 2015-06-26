@@ -57,12 +57,7 @@ $(document).ready(function(){
       projectbutton.off("click");
       projectbutton.click(function(){
 				$('.otherwork').slideToggle("slow");
-         if ($('.otherwork').css('display') == 'block') {
-            projectbutton.css('top','65%');
-          } else {
-            projectbutton.css('top','30%');
-          }
-			});
+		   });
         }
        };
 

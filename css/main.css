@@ -64,8 +64,7 @@ button{
 
 header nav button{
 	position: absolute;
-	top:35%;
-	right:2%;
+	top:40%;
 }
 
 
@@ -188,6 +187,7 @@ header img{
 }
 
 header nav{
+	position: relative;
 	width: 25%;
 	float:right;
 	text-align: right;
@@ -312,9 +312,7 @@ header.project{
 	font-size:1.5em;
 }
 
-
 .container2{
-	/*padding:5%;*/
 	width: 60%;
 	margin:0 auto;	
 }
