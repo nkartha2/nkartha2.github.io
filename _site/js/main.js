@@ -40,7 +40,6 @@ $(document).ready(function(){
       projectbutton.off("click");
 		  projectbutton.click(function() {
         if ($('header').hasClass('header') === false) {
-          console.log(projectnav.css('display'));
     ////hamburger icon color toggling 
           if (projectnav.css('display') == 'block') {
             projectbutton.removeClass('activeb');
@@ -58,6 +57,11 @@ $(document).ready(function(){
       projectbutton.off("click");
       projectbutton.click(function(){
 				$('.otherwork').slideToggle("slow");
+         if ($('.otherwork').css('display') == 'block') {
+            projectbutton.css('top','65%');
+          } else {
+            projectbutton.css('top','30%');
+          }
 			});
         }
        };
