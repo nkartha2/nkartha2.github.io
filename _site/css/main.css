@@ -525,6 +525,12 @@ section:nth-of-type(3){
 
 .bx-wrapper .bx-controls-direction a{
 	top:30%;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.bx-wrapper .bx-controls-direction a:hover{
+	opacity: 0.4;
 }
  
 
@@ -569,7 +575,7 @@ section:nth-of-type(3){
 /*************************about*************************/
 
 .about{
-	padding-top: 5%;
+	padding-top: 7%;
 	padding-bottom: 5%;
 }
 
@@ -606,12 +612,12 @@ section:nth-of-type(3){
 aside{
 	/*margin-left: 5%;*/
 	text-align: center;
-	margin-top:1%;
+	margin-top:5%;
 	width: 50%;
 }
 
 .about ul{
-	margin-bottom: 5%;
+	margin-bottom: 7%;
 }
 
 .about ul li{
@@ -890,11 +896,35 @@ footer ul li:last-child{
   	padding-top: 7%;
   }
 
+  .about h1, 
+  .about h2{
+  	text-align: center;
+  }
+
+  .about p{
+  	text-align: left;
+  }
+
   .about img{
 	width: 70%;
 	float:none;
 	display: block;
-	margin:0;
+	margin:0 auto;
+	}
+
+	.work ul li{
+		width: 45%;
+		margin-bottom: 3%;
+		height: auto;
+	}
+
+	.testimonial ul li{
+		width: 100%;
+		font-size: 1em;
+	}
+
+	aside{
+		display: none;
 	}
 
 	footer h2,
