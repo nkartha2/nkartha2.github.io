@@ -702,21 +702,21 @@ footer a{
 }
 
 footer h2{
-	float:left;
+	display: inline-block;
 	padding:0;
 	margin:0;
 	font-size: 1.5em;
 }
 
 footer ul{
-	float:right;
-	width: 20%;
+	margin-left: 10%;
+	display: inline-block;
+	width: 80%;
 }
 
 footer ul li{
 	font-size: 1.5em;
 	text-align: center;
-	width: 15%;
 	padding:2%;
 	display: inline-block;
 }
