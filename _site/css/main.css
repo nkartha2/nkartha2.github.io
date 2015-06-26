@@ -794,6 +794,12 @@ footer ul li:last-child{
 		margin-top: 5%;
 		font-size: 1.9em;
 	}
+
+	.atmos{
+	background:url(../img/atmoshero.jpg) center center fixed;
+	background-size: cover; 
+	min-height: 400px;
+}
 	/**********work**************/
 	.work ul li{
 		width: 45%;
