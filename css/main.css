@@ -535,7 +535,7 @@ section:nth-of-type(3){
  
 
 .testimonial{
-	padding-top: 3%;
+	padding-top: 7%;
 	margin-bottom:5%;
 	color:#fcfcfc;
 	background-color: #000;
@@ -898,24 +898,30 @@ footer ul li:last-child{
 
   .about h1, 
   .about h2{
+  	margin-top: 3%;
   	text-align: center;
   }
 
   .about p{
   	text-align: left;
+  	margin-top: 7%;
   }
 
   .about img{
-	width: 70%;
+	width: 65%;
 	float:none;
 	display: block;
-	margin:0 auto;
+	margin:1% auto 5%;
 	}
 
 	.work ul li{
 		width: 45%;
 		margin-bottom: 3%;
-		height: auto;
+		height: 15em;
+	}
+
+	.work article{
+		min-height: 150px;
 	}
 
 	.testimonial ul li{
