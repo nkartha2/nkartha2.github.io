@@ -592,6 +592,7 @@ header.project{
 
 .synopsis{
 	background: url(../img/affinitymap5.jpg)no-repeat -500px fixed;
+	background-size: cover;
 }
 
 .synopsis2{
@@ -923,7 +924,7 @@ footer ul li:last-child{
 	.synopsis,
 	.synopsis2,
 	.synopsis3{
-		min-height: 250px;
+		min-height: 400px;
 		padding-top: 20%;
 	}
 
