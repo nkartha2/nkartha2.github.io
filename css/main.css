@@ -999,6 +999,11 @@ footer ul li:last-child{
 	width: 100%;
 }
 
+footer ul li{
+	font-size: 1.3em;
+	padding:2%;
+}
+
 @media screen and (max-width:480px){
 
 	header img{
