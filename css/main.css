@@ -79,6 +79,14 @@ header nav button span{
 	cursor: pointer;
 }
 
+.homenav button{
+	display: none;
+}
+
+.homenav button span{
+	background-color: #000;
+}
+
 .overview button
 {
 	color:#E6E7F6;
@@ -325,8 +333,6 @@ header.project{
 .research{
 	padding-top:9%;
 	padding-bottom:12%;
-	/*background-color: #E7E6EA;*/
-
 }
 
 section:nth-of-type(3){
@@ -507,12 +513,18 @@ section:nth-of-type(3){
 	bottom:15%;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a{
+.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a{
 	background-color: #fcfcfc;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a.active{
 	background-color:#6A5AF8;
+}
+
+.bx-wrapper .bx-controls-direction a{
+	top:30%;
 }
  
 
@@ -759,7 +771,8 @@ footer ul li:last-child{
 		right:1%;
 	}
 
-	header nav{
+	nav.homenav,
+	header.project nav{
 		position: absolute;
 		top:0;
 		right:0;
@@ -767,12 +780,25 @@ footer ul li:last-child{
 		background-color: #fcfcfc;
 	}
 
-	header nav ul li{
+	nav.homenav ul li,
+	header.project nav ul li{
 		display: block;
 	}
 
 	header.project nav ul li a{
 		color:#000;
+	}
+
+	/*nav.homenav ul{
+		display: none;
+	}*/
+
+
+	nav.homenav button{
+	display: inline-block;
+	position: absolute;
+	top:0;
+	right:1%;
 	}
 
 	.atmos{

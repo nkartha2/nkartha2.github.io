@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+windowsize = $(window).width();
+
 
 ////navigation animation 
 	$('a').click(function(){
@@ -24,6 +26,24 @@ $(document).ready(function(){
 		offset:200
 	});
 
+////hamburger icon
+
+	var checkWindowWidth = function() {
+		if (windowsize <= 779){
+      		$('nav.homenav ul li').css('display','none');
+      		$('nav.homenav button').click(function(){
+				$('nav.homenav ul li').slideToggle('slow');
+			});
+ 		} else if(windowsize>=780){
+      		$('nav.homenav ul li').css('display','inline-block');
+    	}
+    };
+
+	checkWindowWidth(); // fire on load
+		$( window ).resize(function(){ // fire on resize
+			windowsize = $(window).width();
+			checkWindowWidth(); // for responsive menu
+	});
 
 ////changing work images on mouseenter 
 	/////world bicycle relief image to gif 

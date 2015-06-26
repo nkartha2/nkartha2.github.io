@@ -32,7 +32,6 @@ $(document).ready(function(){
 	var checkWindowWidth = function() {
      var projectnav = $('header.project nav ul li');
      var projectbutton = $('header.project nav button');
-     var white = true;
 
   ////hamburger icon only  
     if (windowsize <= 779){
