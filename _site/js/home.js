@@ -31,6 +31,7 @@ windowsize = $(window).width();
 	var checkWindowWidth = function() {
 		if (windowsize <= 779){
       		$('nav.homenav ul li').css('display','none');
+      		$('nav.homenav button').off("click");
       		$('nav.homenav button').click(function(){
 				$('nav.homenav ul li').slideToggle('slow');
 			});
