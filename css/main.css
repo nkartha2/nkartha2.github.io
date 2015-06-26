@@ -928,7 +928,8 @@ footer ul li:last-child{
 	}
 
 	.synopsis{
-		background: url(../img/affinitymap5.jpg)no-repeat -50px center fixed;
+		background: url(../img/affinitymap5.jpg)no-repeat center -200px fixed;
+		background-size: cover;
 	}
 
 	.synopsis p,
