@@ -927,10 +927,10 @@ footer ul li:last-child{
 		padding-top: 20%;
 	}
 
-	/*.synopsis{
-		background-size: cover;
-	}*/
-	
+	.synopsis{
+		background: url(../img/affinitymap5.jpg)no-repeat -50px center fixed;
+	}
+
 	.synopsis p,
 	.synopsis2 p,
 	.synopsis3 p{
