@@ -519,6 +519,10 @@ aside{
 	margin:0 auto;
 }
 
+.testimonial .slide{
+	padding-bottom: 1%;
+}
+
 
 /**************************************************project*************************/
 
@@ -767,7 +771,7 @@ footer ul li:last-child{
 @media screen and (max-width:770px){
 
 	header img{
-	width: 6%;
+	width: 8%;
 	}
 
 	header nav button{
@@ -783,6 +787,7 @@ footer ul li:last-child{
 
 	.home h1{
 		margin-top: 10%;
+		font-size: 7.5em;
 	}
 
 	.home h2{
@@ -797,7 +802,7 @@ footer ul li:last-child{
 	}
 
 	.work article{
-		min-height: 150px;
+		min-height: 200px;
 	}
 /**********about**************/
 
@@ -844,8 +849,8 @@ footer ul li:last-child{
 	}
 
 	.testimonial blockquote{
-		text-align: center;
-		width: 80%;
+		/*text-align: center;*/
+		width: 65%;
 	}
 
 	.testimonial h3{
@@ -993,6 +998,10 @@ footer ul li:last-child{
 
 	header img{
 	width: 8%;
+	}
+
+	.work article{
+		height: 150px;
 	}
 
 }
