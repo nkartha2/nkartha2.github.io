@@ -704,20 +704,21 @@ footer a{
 footer h2{
 	display: inline-block;
 	padding:0;
-	margin:0;
+	margin:1% 0 0;
 	font-size: 1.5em;
 }
 
 footer ul{
-	margin-left: 10%;
 	display: inline-block;
-	width: 80%;
+	float: right;
+	width: 40%;
+	text-align: center;
 }
 
 footer ul li{
 	font-size: 1.5em;
 	text-align: center;
-	padding:2%;
+	padding:5%;
 	display: inline-block;
 }
 
@@ -860,6 +861,7 @@ footer ul li:last-child{
 	nav.homenav,
 	header.project nav{
 		position: absolute;
+		z-index: 999;
 		top:0;
 		right:0;
 		text-align: center;
@@ -869,6 +871,9 @@ footer ul li:last-child{
 	nav.homenav ul li,
 	header.project nav ul li{
 		display: block;
+		position: relative;
+		z-index: 999;
+
 	}
 
 	header.project nav ul li a{
@@ -880,6 +885,7 @@ footer ul li:last-child{
 	position: absolute;
 	top:0;
 	right:1%;
+	z-index: 999;
 	}
 
 	.atmos{
@@ -971,9 +977,6 @@ footer ul li:last-child{
   .description p:nth-of-type(2){
   	padding-top: 7%;
   }
- 
-
-
 
 /**********footer**************/
 
