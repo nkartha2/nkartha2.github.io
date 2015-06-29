@@ -71,6 +71,7 @@ button{
 header nav button{
 	position: absolute;
 	top:40%;
+	/*right:-10%;*/
 }
 
 
@@ -161,7 +162,7 @@ button.activeb span{
 	background-color: #000;
 }
 
-/*************************header class*************************/
+/*************************header class added by js- fixed nav*************************/
 .header{
 	background-color: #fcfcfc;
 	-webkit-transition: all 0.3s ease-out;
@@ -213,7 +214,7 @@ header nav{
 
 header nav ul li{
 	margin-top: 4%;
-	padding:2% 2% 2%;
+	padding:2% 3% 2%;
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -658,6 +659,17 @@ section:nth-of-type(3){
 	float:left;
 }
 
+/*************************design*************************/
+
+.design{
+	padding-top:10%;
+	padding-bottom:10%;
+}
+
+.design img{
+	width: 50%;
+}
+
 /*************************fed*************************/
 
 .fed{
@@ -674,6 +686,7 @@ section:nth-of-type(3){
 
 .fed img{
 	width: 50%;
+	margin-top: 5%;
 	float:right;
 }
 
@@ -935,7 +948,7 @@ footer ul li:last-child{
 
 	.synopsis{
 		background: url(../img/affinitymap5.jpg)no-repeat center -200px fixed;
-		background-size: cover;
+		/*background-size: cover;*/
 	}
 
 	.synopsis p,
