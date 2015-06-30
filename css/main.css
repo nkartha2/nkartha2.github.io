@@ -892,12 +892,12 @@ footer ul li:last-child{
 	}
 
 	.testimonial ul li{
-		text-align: center;
+		/*text-align: center;*/
 		font-size: 0.9em;
 	}
 
 	blockquote{
-		width: 65%;
+		width: 60%;
 	}
 
 	.testimonial .slide  em{
