@@ -1043,7 +1043,8 @@ footer ul li:last-child{
     }
   /**********project recap**************/
   .description{
-  	padding-top:18%;
+  	padding-top:15%;
+  	padding-bottom: 18%;
   	min-height: 300px
   }
 
