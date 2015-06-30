@@ -537,7 +537,7 @@ header.project{
 }
 
 .atmos{
-	background:url(../img/atmoshero.jpg) center -170px fixed;
+	background:url(../img/atmoshero.jpg) no-repeat center -170px fixed;
 	background-size: cover; 
 	min-height: 520px;
 }
@@ -841,16 +841,14 @@ footer ul li:last-child{
 	.atmos{
 	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
 	background-size: cover;
+	min-height: 450px;
 }
 	/**********work**************/
 	.work ul li{
 		width: 45%;
 		margin-bottom: 3%;
-		height: 15em;
-	}
-
-	.work article{
 		min-height: 200px;
+		max-height: 300px;
 	}
 /**********about**************/
 
@@ -880,15 +878,10 @@ footer ul li:last-child{
 
 	.bx-wrapper{
 		width: 100%;
-		padding:5%;
-	}
-
-	.bx-wrapper .bx-controls-direction a{
-		top:25%;
 	}
 
 	.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
-		width: 85%;
+		width: 100%;
 	}
 
 	.testimonial ul li{
@@ -897,7 +890,6 @@ footer ul li:last-child{
 	}
 
 	.testimonial blockquote{
-		/*text-align: center;*/
 		width: 65%;
 	}
 
@@ -1026,14 +1018,16 @@ footer ul li:last-child{
     ,.design article:nth-of-type(2){
     	float:none;
     	display: block;
-    	text-align: center;
     	width: 100%;
+    }
+
+    .design article:nth-of-type(2){
+    	margin-left: 0;
     }
 
      .design article:nth-of-type(1) img
     ,.design article:nth-of-type(2) img{
-    	width: 75%;
-    	/*margin:0 auto;*/
+    	width: 100%;
     }
   /**********project recap**************/
   .description{
@@ -1064,15 +1058,16 @@ footer ul li{
 	padding:2%;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:640px){
 
 	header img{
 	width: 13%;
 	}
 
-	.work article{
-		height: 150px;
+	.work ul li {
+		width: 100%;
+		margin-bottom: 7%;
+		height: auto;
 	}
-
 }
 
