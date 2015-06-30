@@ -72,11 +72,6 @@ windowsize = $(window).width();
 	$('.work li:nth-of-type(3) img').fadeIn(1200);
 			});
 
-
-	$('.work li:nth-of-type(3)').mouseleave(function(){
-		$('.work ul li:nth-of-type(3) a img').attr('src','img/atmoslogo.png');
-	});
-
 ////////slider for testimonial
 
 	$('.bxslider').bxSlider();
