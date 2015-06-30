@@ -71,7 +71,6 @@ button{
 header nav button{
 	position: absolute;
 	top:40%;
-	/*right:-10%;*/
 }
 
 
@@ -80,7 +79,6 @@ header nav button span{
 	width: 19px;
 	height: 3px;
 	margin: 4px 0;
-	/*border-radius: px;*/
 	background-color: #fcfcfc;
 	z-index: 99999;
 	cursor: pointer;
@@ -556,10 +554,8 @@ header.project{
 .overview{
 	padding-top:3%;
 	padding-bottom:3%;
-	/*position: relative;*/
 	text-align: center;
 	background: url(../img/tinygrid.png) fixed;
-	/*background-color: #E6E7F6;*/
 }
 
 .overview ul li{
@@ -667,7 +663,6 @@ section:nth-of-type(3){
 }
 
 .design h2{
-	/*display: inline-block;*/
 	margin-bottom: 2%;
 	font-size: 1.25em;
 }
@@ -844,9 +839,8 @@ footer ul li:last-child{
 	}
 
 	.atmos{
-	background:url(../img/atmosheromobile.jpg) center -50px fixed;
-	background-size: cover; 
-	min-height: 400px;
+	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
+	background-size: cover;
 }
 	/**********work**************/
 	.work ul li{
