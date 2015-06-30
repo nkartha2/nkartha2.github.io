@@ -882,14 +882,22 @@ footer ul li:last-child{
 		width: 100%;
 	}
 
+	.bx-wrapper .bx-prev{
+		left:0;
+	}
+
+
+	.bx-wrapper .bx-next{
+		right:0;
+	}
+
 	.testimonial ul li{
-		width: 100%;
+		text-align: center;
 		font-size: 0.9em;
 	}
 
 	blockquote{
 		width: 65%;
-		display: none;
 	}
 
 	.testimonial .slide  em{
@@ -1054,23 +1062,11 @@ footer ul li:last-child{
 	float:none;
 	display: block;
 	width: 100%;
-}
-
-footer ul li{
-	font-size: 1.3em;
-	padding:2%;
-}
-
-@media screen and (max-width:700px){
-
-	header img{
-	width: 13%;
 	}
 
-	.work ul li {
-		width: 100%;
-		margin-bottom: 7%;
-		height: auto;
+	footer ul li{
+		font-size: 1.3em;
+		padding:2%;
 	}
 }
 
@@ -1092,6 +1088,6 @@ footer ul li{
 	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
 	background-size: 450px 600px;
 	min-height: 520px;
-}
+	}
 
 }
