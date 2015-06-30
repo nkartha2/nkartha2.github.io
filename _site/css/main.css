@@ -1089,10 +1089,9 @@ footer ul li{
 
 @media screen and (max-width:500px){
 	.atmos{
-		display: none;
-/*	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
+	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
 	background-size: 450px 600px;
-	min-height: 520px;*/
+	min-height: 520px;
 }
 
 }
