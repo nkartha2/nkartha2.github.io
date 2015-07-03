@@ -59,7 +59,7 @@ windowsize = $(window).width();
 	/////gigscout image to gif 
 
 	$('.work li:nth-of-type(2)').mouseenter(function(){
-			$('.work ul li:nth-of-type(2) a img').attr('src','img/gigscoutlogo2.gif').css('width','30%');
+			$('.work ul li:nth-of-type(2) a img').attr('src','img/gigscoutnotemotion1.gif').css('width','30%');
 		});
 
 		$('.work li:nth-of-type(2)').mouseleave(function(){
@@ -69,8 +69,14 @@ windowsize = $(window).width();
 	///atmos image  
 	$('.work li:nth-of-type(3)').mouseenter(function(){
 	$('.work li:nth-of-type(3) img').hide();
-	$('.work li:nth-of-type(3) img').fadeIn(1200);
+	$('svg').css('display', 'block');
+	// $('svg polygon').addClass('path');
 			});
+
+	$('.work li:nth-of-type(3)').mouseleave(function(){
+		$('svg').css('display','none');
+		$('.work li:nth-of-type(3) img').fadeIn();
+	});
 
 ////////slider for testimonial
 

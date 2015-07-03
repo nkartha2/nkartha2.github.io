@@ -54,9 +54,9 @@ $(document).ready(function(){
       projectnav.css('display','inline-block');
       projectbutton.css('background-color','transparent');
       projectbutton.off("click");
-      projectbutton.click(function(){
-				$('.otherwork').slideToggle("slow");
-		   });
+    //   projectbutton.click(function(){
+				// $('.otherwork').slideToggle("slow");
+		  //  });
         }
        };
 
