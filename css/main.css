@@ -89,7 +89,7 @@ header nav button span{
 }
 
 .homenav button span{
-	background-color: #000;
+	background-color: #131313;
 }
 
 .overview button
@@ -141,6 +141,7 @@ a.site button:hover{
 .otherwork button{
 	font-family: 'Lato', sans-serif;
 	text-align: center;
+	text-transform: uppercase;
 	color:#fcfcfc;
 	border:solid 1px #fcfcfc;
 	font-size: 0.9em;
@@ -189,19 +190,19 @@ a.site:hover{
 }
 
 button.activeb span{
-	background-color: #000;
+	background-color: #131313;
 }
 
 /*************************header class added by js- fixed nav*************************/
 .header{
 	/*background-color: #fcfcfc;*/
-	background-color: #000;
+	background-color: #131313;
 	/*background: url(../img/tinygrid.png) fixed;*/
 	/*background-color: #fed53b;*/
 	/*background-color: #F2D205;*/
 	/*background-color: #EFE234;*/
 	/*background-color: #FFF200;*/
-	opacity: 0.9;
+	/*opacity: 0.9;*/
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-in;
@@ -230,6 +231,8 @@ header.header nav button:hover span{
 
 header{
 	width: 100%;
+	max-width: 1400px;
+	/*margin:0 auto;*/
 	position: fixed;
 	/*background-color: #FFF200;*/
 	top:0;
@@ -267,7 +270,7 @@ header nav ul li{
 
 
 header nav ul li a{
-	color:#000;
+	color:#131313;
 }
 
 /*************************landing page*************************/
@@ -297,7 +300,7 @@ header nav ul li a{
 
 .home h2{
 	font-size: 2em;
-	color:#000;
+	color:#131313;
 	margin-bottom: 5%;
 	position: relative;
 	z-index: 999;
@@ -372,7 +375,7 @@ img.sketch{
 .work{
 	padding-top:5%;
 	padding-bottom:10%;
-	background-color: #000;
+	background-color: #131313;
 	/*background: -webkit-linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
 	background: -o-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
 	background: -moz-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
@@ -384,21 +387,31 @@ img.sketch{
 	min-height: 300px;
 }
 
-.work h1{
+.work h1
+,.description h1
+,.testimonial h1{
+	text-transform: uppercase;
 	color:#fcfcfc;
 	margin:5% 0 5%;
 	font-size: 2em;
+	font-weight: 300;
 }
+
+/*.work h4{
+	color:#6A5AF8;
+}*/
 
 .work h4
 ,.work h5{
 	margin:5%;
+	text-transform: uppercase;
 }
 
 .work h4{
 	color:#fcfcfc;
-	font-weight: 700;
-	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.3em;
+	/*font-family: 'Lato', sans-serif;*/
 }
 
  .work h5{
@@ -475,6 +488,7 @@ img.sketch{
 /*************************about*************************/
 
 .about{
+	background: url(../img/tinygrid.png) fixed;
 	padding-top: 7%;
 	padding-bottom: 5%;
 }
@@ -553,7 +567,7 @@ img.profpic {
 .interests ul{
 	position: absolute;
 	right:-4%;
-	top:140%;
+	top:200%;
 	text-align: right;
 	width: 42%;
 }
@@ -565,8 +579,8 @@ img.profpic {
 	min-height: 50px;
 }
 
-.interests ul li img{
-	width: 13%;
+.interests ul li i{
+	width: 20%;
 	margin-right: 30%;
 	display: none;
 	float:right;
@@ -636,15 +650,15 @@ img.profpic {
 	color:#6A5AF8;
 	position: absolute;
 	line-height: 1.5em;
-	top:45px;
+	top:50px;
 	left:0;
 	font-size: 0.8em;
 	left:-30px;
 	text-align: center;
 }
 
-.interests ul li:hover img{
-	display: block;
+.interests ul li:hover i{
+	display: inline-block;
 }
 
 /*************************testimonial*************************/
@@ -665,19 +679,19 @@ img.profpic {
 
 .bx-wrapper .bx-controls-direction a{
 	top:33%;
-	background-color: #fff;
+	background-color: #6A5AF8;
 	border-radius: 50%;
 }
 
 .bx-wrapper .bx-controls-direction a:hover{
-	opacity: 0.4;
+	opacity: 0.8;
 }
 
 .testimonial{
 	padding-top: 7%;
 	padding-bottom:5%;
 	color:#fcfcfc;
-	background-color: #000;
+	background-color: #131313;
 }
 
 .testimonial blockquote{
@@ -689,14 +703,29 @@ img.profpic {
 		font-style: normal;
 	}
 
-.testimonial h3{
-	text-align: right;
+.testimonial h3
+,.testimonial h4
+,.description h3,
+.description h4{
+	/*float:right;*/
+	text-align: center;
 	line-height: 1.5em;
-	margin-right: 5%;
+	font-size: 1em;
+	/*margin-right: 5%;*/
 }
 
-.testimonial h1{
-	font-size: 2em;
+.testimonial h4
+,.description h4{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin-bottom: 5%;
+}
+
+.testimonial h3
+,.description h3{
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #6A5AF8;
 }
 
 .testimonial ul li{
@@ -750,6 +779,18 @@ header.project{
 	font-weight: 300;
 }
 
+
+.overview h1
+,.synopsis h1{
+	font-size: 1.8em;
+	line-height: 1.5em;
+}
+
+.overview h2{
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
 .col{
 	float:left;
 	width: 25%;
@@ -765,36 +806,67 @@ header.project{
 
 /*************************goal*************************/
 
-.synopsis
-,.synopsis2
-,.synopsis3{
-	padding-top:15%;
-	padding-bottom:17%;
-	min-height: 600px;
+.preview
+,.preview2
+,.preview3{
+	/*padding-top:15%;
+	padding-bottom:17%;*/
+	min-height: 300px;
 }
 
-.synopsis{
-	background: url(../img/affinitymap5.jpg)no-repeat -500px center fixed;
+.preview{
+	background: url(../img/wbrkids.jpg)no-repeat  center 50px fixed;
+	background-size: cover;
 }
 
-.synopsis2{
+.preview3{
 	background: url(../img/band.jpg)no-repeat center center fixed;
 	background-size: cover;
 }
 
-.synopsis3{
+.preview2{
 	background: url(../img/atmosnapes.jpg)no-repeat center center fixed;
 	background-size: cover;
 }
 
-.synopsis2 p,
+.goal
+,.process{
+	float:left;
+	width: 50%;
+	padding:15% 3% 15%;
+	height: 100vh;
+	/*max-height: 600px;*/
+	display: inline-block;
+}
+
+.goal{
+	color:#fcfcfc;
+	background-color:#131313;
+}
+
+.goal h1, 
+.process h1{
+	font-size: 2em;
+	line-height: 2em;
+}
+
+.goal p,
+.process p{
+	line-height: 1.5em;
+}
+
+.process p:nth-of-type(2){
+	margin-top: 2%;
+}
+
+/*.synopsis2 p,
 .synopsis p
 ,.synopsis3 p{
 	color:#131313;
 	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	font-weight: 300;
 	font-size:1.5em;
-}
+}*/
 
 .container2{
 	width: 60%;
@@ -811,17 +883,16 @@ header.project{
 	padding-bottom:12%;
 }
 
-section:nth-of-type(3){
-	background: url(../img/tinygrid.png) fixed;
-}
-
-.research h1{
+.fed h1
+,.research h1{
+	font-size: 2em;
 	margin:0;
 	margin-bottom: 5%;
 }
 
 .fed ul
 ,.research ul{
+	width: 30%;
 	display: inline-block;
 	font-size: 1.3em;
 }
@@ -829,6 +900,7 @@ section:nth-of-type(3){
 .fed ul li,
 .research ul li{
 	list-style: square;
+	margin:5%;
 }
 
 .research ul
@@ -841,11 +913,37 @@ section:nth-of-type(3){
 	float:left;
 }
 
+/*************************fed*************************/
+
+.fed{
+	padding-top:10%;
+	position: relative;
+	padding-bottom:10%;
+	background-color: #fcfcfc;
+	background: url(../img/tinygrid.png) fixed;
+}
+
+.fed img.gif{
+	width: 52%;
+	padding:3%;
+	border:solid 1px #131313;
+	border-radius: 50px;
+	float:right;
+}
+
+.fed img.laptop{
+	position: absolute;
+	width: 55%;
+	top:12%;
+	right:1%;
+}
+
 /*************************design*************************/
 
 .design{
 	padding-top:10%;
 	padding-bottom:10%;
+	background: url(../img/tinygrid.png) fixed;
 }
 
 .design h2{
@@ -886,24 +984,7 @@ section:nth-of-type(3){
 	width: 100%;
 	max-height: 550px;
 }
-/*************************fed*************************/
 
-.fed{
-	padding-top:10%;
-	padding-bottom:10%;
-	background-color: #fcfcfc;
-}
-
-.fed ul{
-	margin-left: 3%;
-	width: 30%;
-}
-
-.fed img{
-	width: 50%;
-	margin-top: 5%;
-	float:right;
-}
 
 /*************************description*************************/
 
@@ -915,16 +996,25 @@ section:nth-of-type(3){
 	min-height: 600px;
 }
 
-.description p{
+.description h3,
+.description h4{
+	font-size: 1.5em;
+}
+
+.description h3{
+	margin-top: 5%;
+}
+
+.description blockquote{
 	font-size:1.5em;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	margin:0 auto;
 }
 
-.description p:nth-of-type(2){
+/*.description p:nth-of-type(2){
 	padding-top: 2%;
-}
+}*/
 
 /*************************other work*************************/
 
@@ -960,7 +1050,7 @@ section:nth-of-type(3){
 /*************************footer*************************/
 
 footer a{
-	color:#000;
+	color:#131313;
 }
 
 footer h2{
@@ -1127,7 +1217,7 @@ footer ul li:last-child{
 	}
 
 	header.project nav ul li a{
-		color:#000;
+		color:#131313;
 	}
 
 	nav.homenav button
@@ -1172,10 +1262,10 @@ footer ul li:last-child{
 		padding-top: 20%;
 	}
 
-	.synopsis{
+/*	.synopsis{
 		background: url(../img/affinitymap5.jpg)no-repeat center -200px fixed;
 	}
-
+*/
 	.synopsis p,
 	.synopsis2 p,
 	.synopsis3 p{
@@ -1184,7 +1274,7 @@ footer ul li:last-child{
 	}
 
 	.synopsis p{
-		color:#000;
+		color:#131313;
 	}
 
 	.container2{
@@ -1240,6 +1330,10 @@ footer ul li:last-child{
   	padding-top:15%;
   	padding-bottom: 18%;
   	min-height: 300px
+  }
+
+  img.results{
+  	width: 50%;
   }
 
   .description p{
