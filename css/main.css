@@ -43,7 +43,7 @@ html, body{
 
 p,blockquote{
 	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	font-weight: 300;
 	margin:0;
 }
 
@@ -70,8 +70,8 @@ button{
 
 header nav button{
 	display: none;
-	position: absolute;
-	top:40%;
+	/*position: absolute;
+	top:40%;*/
 }
 
 
@@ -106,25 +106,56 @@ header nav button span{
 	border:none;
 }
 
-.view{
+.view button{
 	display: none;
 }
 
-a.site{
+a.site button {
 	float:left;
 	display: inline-block;
-	color:#131313;
-	margin-top:1.5%;
+	color:#fcfcfc;
+	border: solid 1px #fcfcfc;
+	padding:0.5% 1% 0.5%;
+	border-radius: 5%;
+	margin-top:1%;
 	margin-left: 5%;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
-	font-size: 1.1em;
-	border:none;
+	font-size: 0.9em;
+}
+
+a.site button:hover{
+	background-color: #fcfcfc;
+	color: #6A5AF8;
+	/*font-weight: 700;*/
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-in;
 }
 
 .overview button{
 	width: 75%;
 	float:right;
+}
+
+.otherwork button{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color:#fcfcfc;
+	border:solid 1px #fcfcfc;
+	font-size: 0.9em;
+	width: 200px;
+	display: inline-block;
+	padding: 5%;
+}
+
+.otherwork a:hover button
+{
+	color:#6A5AF8;
+	background-color: #fcfcfc;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-in;
 }
 
 /*************************hover and active states*************************/
@@ -153,6 +184,7 @@ a.site:hover{
 .overview button:hover
 ,footer ul li:hover
  {
+ 	color:#fcfcfc;
 	background-color:#6A5AF8;
 }
 
@@ -162,16 +194,23 @@ button.activeb span{
 
 /*************************header class added by js- fixed nav*************************/
 .header{
-	background-color: #fcfcfc;
+	/*background-color: #fcfcfc;*/
+	background-color: #000;
+	/*background: url(../img/tinygrid.png) fixed;*/
 	/*background-color: #fed53b;*/
-	background-color: #FFF200;
+	/*background-color: #F2D205;*/
+	/*background-color: #EFE234;*/
+	/*background-color: #FFF200;*/
+	opacity: 0.9;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-in;
 }
 
 .header nav ul li a{
-	color:#000;
+	color:#EFE234;
+	/*padding:4%;*/
+	/*background-color: #fcfcfc;*/
 	/*background-color: #FFF200;*/
 }
 
@@ -179,12 +218,9 @@ button.activeb span{
 	color:#6A5AF8 ;
 }
 
-.header nav ul li:first-child a{
-	padding:10%;
-}
 
 header.header  nav button span{
-	background-color: #000;
+	background-color: #EFE234;
 }
 
 header.header nav button:hover span{
@@ -195,6 +231,7 @@ header.header nav button:hover span{
 header{
 	width: 100%;
 	position: fixed;
+	/*background-color: #FFF200;*/
 	top:0;
 	z-index: 999;
 }
@@ -209,6 +246,7 @@ header img{
 header nav{
 	position: relative;
 	/*width: 30%;*/
+	width: 70%;
 	float:right;
 	text-align: right;
 }
@@ -218,34 +256,15 @@ header nav{
 }*/
 
 header nav ul li{
-	margin-top: 4%;
-	padding:2% 3% 2%;
 	display: inline-block;
+	/*margin-top: 4%;*/
+	/*width: 19%;*/
+	margin:3% 1% 2%;
+	
 	text-transform: uppercase;
 }
 
-.otherwork{
-	display: none;
-	width: 100%;
-	max-width: 1300px;
-	color:#fcfcfc;
-	/*color:#000;*/
-	background-color: #000;
-	padding-left: 5%;
-	text-transform: uppercase;
-	/*background-color: #000;*/
-}
 
-.otherwork h3{
-	display: inline-block;
-	margin:1%;
-}
-
-.otherwork a{
-	text-align: center;
-	color:#fcfcfc;
-	padding:1%;
-}
 
 header nav ul li a{
 	color:#000;
@@ -258,25 +277,82 @@ header nav ul li a{
 
 .home{
 	background: url(../img/tinygrid.png) fixed;
-	min-height: 650px;
+	min-height: 700px;
 	text-align: center;
-}
-
-.home h1, 
-.home h2{
-	margin: 0;
-	padding:0;
+	position: relative;
+	overflow: hidden;
 }
 
 .home h1{
 	font-size: 10em;
-	padding:15% 0 0;
+	width: 50%;
+	/*color:#6A5AF8;*/
+	/*background-color: #6A5AF8;*/
+	color:#000;
+	margin:15% auto 3%;
+	position: relative;
+	z-index: 999;
+
 }
 
 .home h2{
 	font-size: 2em;
+	color:#000;
 	margin-bottom: 5%;
+	position: relative;
+	z-index: 999;
+	/*color:#6A5AF8;*/
+	/*background-color: #FFF200;*/
 }
+
+img.sketch{
+	position: absolute;
+	opacity: 0.1;
+	width: 20%;
+}
+
+ img.sketch1{
+	left:25%;
+	top:10%;
+}
+
+ img.sketch2{
+ 	top:10%;
+ 	left:0%;
+ 	width: 25%;
+ }
+
+ img.sketch3{
+ 	top:8%;
+ 	left:45%;
+ }
+
+  img.sketch4{
+  	top:65%;
+ 	left:25%;
+ }
+
+   img.sketch5{
+   	top:60%;
+ 	left:45%;
+ }
+
+  img.sketch6{
+   	top:60%;
+ 	right:0;
+ }
+
+  img.sketch7{
+  	top:10%;
+  	right:18%;
+  	width: 20%;
+  }
+
+   img.sketch8{
+  	top:10%;
+  	right:5%;
+  	width: 15%;
+  }
 
 .arrow-down {
 	width: 0; 
@@ -296,31 +372,38 @@ header nav ul li a{
 .work{
 	padding-top:5%;
 	padding-bottom:10%;
-	background: -webkit-linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
+	background-color: #000;
+	/*background: -webkit-linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
 	background: -o-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
 	background: -moz-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
-	background: linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
+	background: linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); */
 }
 
 .work article{
-	border: solid 5px #fcfcfc;
+	border: solid 2px #fcfcfc;
 	min-height: 300px;
 }
 
 .work h1{
 	color:#fcfcfc;
-	margin-top:5%;
+	margin:5% 0 5%;
 	font-size: 2em;
+}
+
+.work h4
+,.work h5{
+	margin:5%;
 }
 
 .work h4{
 	color:#fcfcfc;
-	font-weight: 900;
-	/*font-family: 'Lato', sans-serif;*/
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
 }
 
  .work h5{
 	color:#fcfcfc;
+	font-weight: 300;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -331,7 +414,7 @@ header nav ul li a{
 	/*background-color: #000;*/
 	width: 30%;
 	margin-right: 4%;
-	height:500px;
+	/*height:500px;*/
 }
 
 .work ul li img{
@@ -359,11 +442,32 @@ header nav ul li a{
 }
 
 .path {
-  stroke-dasharray: 200;
-  animation: dash 10s linear infinite;
+  stroke-dasharray: 250;
+  -webkit-animation: atmos 7s linear forwards infinite;
+  -moz-animation: atmos 7s linear forwards infinite;
+  -o-animation: atmos 7s linear forwards infinite;
+ animation: atmos 7s linear forwards infinite;
 }
 
-@keyframes dash {
+@-webkit-keyframes atmos {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@-moz-keyframes atmos {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@-o-keyframes atmos {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes atmos {
   to {
     stroke-dashoffset: 1000;
   }
@@ -375,14 +479,16 @@ header nav ul li a{
 	padding-bottom: 5%;
 }
 
-.about h1{
-	font-size: 2em;
+.about h1
+,aside h1{
+	font-size: 2rem;
 	margin:0;
 }
 
 .about h2
 ,aside h2{
 	margin-top: 2%;
+	margin-bottom: 2%;
 	/*text-align: center;*/
 	font-size: 1.3rem;
 }
@@ -394,105 +500,152 @@ header nav ul li a{
 }
 
 .about p{
-	margin-top: 2%;
+	/*float: left;*/
+	font-weight: 300;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	max-width: 45%;
 	line-height: 1.75em;
-	font-size: 0.8em;
+	font-size: 1.2em;
 }
 
-.about img{
-	margin-top: 5%;
-	width: 31%;
-	margin-left: 15%;
+/*aside{
+	width: 45%;
+	display: inline-block;
+}*/
+
+
+img.profpic {
+	width: 35%;
 	float:right;
 }
 
-aside{
-	/*margin-left: 5%;*/
-	text-align: center;
-	margin-top:5%;
-	width: 50%;
+
+.tools img{
+	width: 30%;
 }
 
-.about ul{
-	margin-bottom: 7%;
+.tools ul{
+	float: left;
+	width: 20%;
 }
 
-.about ul li{
+.tools ul:nth-of-type(2){
+	margin-left: 7%;
+}
+
+.tools ul h2{
+	margin-bottom: 5%;
+}
+
+.tools ul li{
 	display: inline-block;
-	margin: 3% 0 4%;
-	width: 18%;
-	min-height: 65px;
+	margin-bottom: 3%;
+	font-size: 0.95em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 }
 
-.about #colt{
-	background: url(../img/colt.png) no-repeat;
-	background-size: 65px;
-}
-
-.about #colt:hover{
-	background: url(../img/colt-hover.png) no-repeat;
-	background-size: 65px;
-}
-
-.about #adt{
-	background: url(../img/mudra.png) no-repeat;
-	background-size: 52px;
-}
-
-.about #adt:hover{
-	background: url(../img/mudra-hover.png) no-repeat;
-	background-size: 52px;
-}
-
-.about #film{
-	background: url(../img/film.png) no-repeat;
-	background-size: 65px;
-}
-
-.about #film:hover{
-	background: url(../img/film-hover.png) no-repeat;
-	background-size: 65px;
-}
-
-.about #travel{
-	background: url(../img/travel.png) no-repeat;
-	background-size: 65px;
-}
-
-.about #travel:hover{
-	background: url(../img/travel-hover.png) no-repeat;
-	background-size: 65px;
-}
-
-.about #designation{
-	background: url(../img/designation.png) no-repeat;
-	background-size: 65px;
-}
-
-.about #designation:hover{
-	background: url(../img/designation-hover.png) no-repeat;
-	background-size: 65px;
-}
-
-.about aside ul li{
+.interests{
 	position: relative;
 }
 
-.about aside ul li h2{
+.interests ul{
+	position: absolute;
+	right:-4%;
+	top:140%;
+	text-align: right;
+	width: 42%;
+}
+
+.interests ul li{
+	display: inline-block;
+	margin: 0 0 4%;
+	width: 18%;
+	min-height: 50px;
+}
+
+.interests ul li img{
+	width: 13%;
+	margin-right: 30%;
+	display: none;
+	float:right;
+}
+
+.interests #colt{
+	background: url(../img/colt.png) no-repeat;
+	background-size: 50px;
+}
+
+.interests #colt:hover{
+	background: url(../img/colt-hover.png) no-repeat;
+	background-size: 50px;
+}
+
+.interests #adt{
+	background: url(../img/mudra.png) no-repeat;
+	background-size: 40px;
+}
+
+.interests #adt:hover{
+	background: url(../img/mudra-hover.png) no-repeat;
+	background-size: 40px;
+}
+
+.interests #film{
+	background: url(../img/film.png) no-repeat;
+	background-size: 50px;
+}
+
+.interests #film:hover{
+	background: url(../img/film-hover.png) no-repeat;
+	background-size: 50px;
+}
+
+.interests #travel{
+	background: url(../img/travel.png) no-repeat;
+	background-size: 50px;
+}
+
+.interests #travel:hover{
+	background: url(../img/travel-hover.png) no-repeat;
+	background-size: 50px;
+}
+
+.interests #designation{
+	background: url(../img/designation.png) no-repeat;
+	background-size: 60px;
+}
+
+.interests #designation:hover{
+	background: url(../img/designation-hover.png) no-repeat;
+	background-size: 60px;
+}
+
+.interests ul li{
+	position: relative;
+}
+
+.interests ul li h2{
 	display: none;
 }
 
-.about aside ul li:hover h2{
+.interests ul li:hover h2{
 	display: block;
+	font-family: 'Lato', sans-serif;
 	color:#6A5AF8;
 	position: absolute;
-	top:65px;
+	line-height: 1.5em;
+	top:45px;
 	left:0;
 	font-size: 0.8em;
 	left:-30px;
 	text-align: center;
 }
 
+.interests ul li:hover img{
+	display: block;
+}
 
 /*************************testimonial*************************/
 
@@ -538,6 +691,7 @@ aside{
 
 .testimonial h3{
 	text-align: right;
+	line-height: 1.5em;
 	margin-right: 5%;
 }
 
@@ -554,7 +708,6 @@ aside{
 .testimonial .slide{
 	padding-bottom: 1%;
 }
-
 
 /**************************************************project*************************/
 
@@ -741,7 +894,6 @@ section:nth-of-type(3){
 	background-color: #fcfcfc;
 }
 
-
 .fed ul{
 	margin-left: 3%;
 	width: 30%;
@@ -752,7 +904,6 @@ section:nth-of-type(3){
 	margin-top: 5%;
 	float:right;
 }
-
 
 /*************************description*************************/
 
@@ -774,6 +925,37 @@ section:nth-of-type(3){
 .description p:nth-of-type(2){
 	padding-top: 2%;
 }
+
+/*************************other work*************************/
+
+.otherwork{
+	text-align: center;
+	padding:2%;
+	/*display: none;*/
+	width: 100%;
+	max-width: 1300px;
+	color:#fcfcfc;
+	/*color:#000;*/
+	background: -webkit-linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
+	background: -o-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
+	background: -moz-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
+	background: linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
+	padding-left: 5%;
+	text-transform: uppercase;
+	/*background-color: #000;*/
+}
+
+.otherwork h3{
+	font-size: 1.5em;
+	display: inline-block;
+	margin-bottom:3%;
+}
+
+.otherwork ul li{
+	display: inline-block;
+	margin:2%;
+}
+
 
 /*************************footer*************************/
 
@@ -807,20 +989,8 @@ footer ul li:last-child{
 }
 
 /*************************media queries*************************/
-@media screen and (max-width:1300px){
-
-	header nav 
-	,header.project nav{
-		width: 40%;
-	}
-}
 
 @media screen and (max-width:1100px){
-	header nav
-	,header.project nav{
-		width: 55%;
-	}
-
 	header img{
 	width: 4%;
 	}
@@ -833,11 +1003,6 @@ footer ul li:last-child{
 
 @media screen and (max-width:940px){
 
-	header nav
-	,header.project nav{
-		width: 55%;
-	}
-
 	.projecthome img{
 		width: 65%;
 		padding-top: 15%;
@@ -845,17 +1010,16 @@ footer ul li:last-child{
 }
 
 @media screen and (max-width:770px){
-
 	header img{
-	width: 8%;
+	width: 5%;
 	}
 
-	header nav button{
-		display: block;
+/*	nav.homenav button{
+		display: inline-block;
 		position: absolute;
 		top:0;
 		right:1%;
-	}
+	}*/
 
 	/**********home**************/
 
@@ -955,19 +1119,19 @@ footer ul li:last-child{
 		background-color: #fcfcfc;
 	}
 
-	nav.homenav ul li,
+	nav.homenav ul li ,
 	header.project nav ul li{
 		display: block;
 		position: relative;
 		z-index: 999;
-
 	}
 
 	header.project nav ul li a{
 		color:#000;
 	}
 
-	nav.homenav button{
+	nav.homenav button
+	,header nav button{
 	display: inline-block;
 	position: absolute;
 	top:0;
@@ -1104,8 +1268,12 @@ footer ul li:last-child{
 @media screen and (max-width:700px){
 
 	header img{
-	width: 13%;
+	width: 5%;
 	}
+
+	/*img.sketch{
+		width: 25%;
+	}*/
 
 	.work ul li {
 		width: 100%;
@@ -1115,6 +1283,11 @@ footer ul li:last-child{
 }
 
 @media screen and (max-width:500px){
+
+	header img{
+	width: 10%;
+	}
+
 	.atmos{
 	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
 	background-size: 450px 600px;

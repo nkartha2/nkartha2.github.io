@@ -18,9 +18,13 @@ windowsize = $(window).width();
 			if(direction==='down'){
 			////changing header background color 
 				$('header').addClass('header');
+				////changing logo back to white as header moves up
+				$('header img').attr({src:"img/logoyellow.png"});
 			}else if(direction==='up'){
 			////changing header back to transparent 
 				$('header').removeClass('header');
+				////changing logo back to white as header moves up
+				$('header img').attr({src:"img/logo.png"});
 			}
 		},
 		offset:200

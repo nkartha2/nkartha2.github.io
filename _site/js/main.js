@@ -12,7 +12,7 @@ $(document).ready(function(){
 			////adding view site and view on github options
 				$('a.view').addClass("site");
 			////changing logo to black  as header moves down
-				$('header img').attr({src:"img/logo.png"});
+				$('header img').attr({src:"img/logoyellow.png"});
 			////changing header background color 
 				$('header').addClass('header');
 			}else if(direction==='up'){
