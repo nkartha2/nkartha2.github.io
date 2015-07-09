@@ -22,13 +22,14 @@
 	*zoom:1;
 }
 
+
+/***********body and containers*********/
 html, body{
 	width: 100%;
 	color:#131313;
 	background-color: #fcfcfc;
 	font-family: 'Oswald', sans-serif;
 }
-
 
 .parentcontainer{
 	max-width: 1400px;
@@ -74,26 +75,32 @@ button{
 
 header nav button{
 	display: none;
-	/*position: absolute;
-	top:40%;*/
-}
-
-
-header nav button span{
-	width: 19px;
-	height: 3px;
-	margin: 4px 0;
-	background-color: #fcfcfc;
+	position: absolute;
+	top:0;
+	right:0;
 	z-index: 99999;
-	cursor: pointer;
 }
 
-.homenav button{
-	display: none;
+header.project nav button span{
+	display: block;
+		width: 19px;
+		height: 3px;
+		margin: 4px 0;
+		border-radius: 10px;
+		background-color: #fff;
+		z-index: 99999;
+		cursor: pointer;
 }
 
-.homenav button span{
-	background-color: #131313;
+header nav.homenav button span{
+	display: block;
+		width: 19px;
+		height: 3px;
+		margin: 4px 0;
+		border-radius: 10px;
+		background-color: #000;
+		z-index: 99999;
+		cursor: pointer;
 }
 
 .overview button
@@ -115,7 +122,6 @@ header nav button span{
 }
 
 a.site button {
-	float:left;
 	display: inline-block;
 	color:#fcfcfc;
 	border: solid 1px #fcfcfc;
@@ -179,7 +185,7 @@ header nav ul li:hover a
 	color:#6A5AF8;
 }
 
-header nav button:hover span{
+header.project button:hover span{
 	background-color: #ccc;
 }
 
@@ -195,19 +201,12 @@ a.site:hover{
 }
 
 button.activeb span{
-	background-color: #131313;
+	background-color: #EFE234;
 }
 
 /*************************header class added by js- fixed nav*************************/
 .header{
-	/*background-color: #fcfcfc;*/
 	background-color: #131313;
-	/*background: url(../img/tinygrid.png) fixed;*/
-	/*background-color: #fed53b;*/
-	/*background-color: #F2D205;*/
-	/*background-color: #EFE234;*/
-	/*background-color: #FFF200;*/
-	/*opacity: 0.9;*/
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-in;
@@ -215,15 +214,11 @@ button.activeb span{
 
 .header nav ul li a{
 	color:#EFE234;
-	/*padding:4%;*/
-	/*background-color: #fcfcfc;*/
-	/*background-color: #FFF200;*/
 }
 
 .header nav ul li:hover a{
 	color:#6A5AF8 ;
 }
-
 
 header.header  nav button span{
 	background-color: #EFE234;
@@ -237,9 +232,7 @@ header.header nav button:hover span{
 header{
 	width: 100%;
 	max-width: 1400px;
-	/*margin:0 auto;*/
 	position: fixed;
-	/*background-color: #FFF200;*/
 	top:0;
 	z-index: 999;
 }
@@ -253,22 +246,14 @@ header img{
 
 header nav{
 	position: relative;
-	/*width: 30%;*/
 	width: 70%;
 	float:right;
 	text-align: right;
 }
 
-/*header.container{
-	padding-right: 0;
-}*/
-
 header nav ul li{
 	display: inline-block;
-	/*margin-top: 4%;*/
-	/*width: 19%;*/
-	margin:3% 1% 2%;
-	
+	margin:3% 1% 2%;	
 	text-transform: uppercase;
 }
 
@@ -277,8 +262,6 @@ header nav ul li a{
 }
 
 /*************************landing page*************************/
-
-
 /*************************home*************************/
 
 .home{
@@ -291,16 +274,11 @@ header nav ul li a{
 
 .home h1{
 	font-size: 10em;
-	/*width: 50%;*/
-	/*color:#6A5AF8;*/
-	/*background-color: #6A5AF8;*/
 	color:#000;
 	margin-top: 15%;
 	margin-bottom: 3%;
-	/*margin:15% auto 3%;*/
 	position: relative;
-	z-index: 999;
-
+	z-index: 50;
 }
 
 .home h2{
@@ -309,8 +287,6 @@ header nav ul li a{
 	margin-bottom: 5%;
 	position: relative;
 	z-index: 999;
-	/*color:#6A5AF8;*/
-	/*background-color: #FFF200;*/
 }
 
 img.sketch{
@@ -381,10 +357,6 @@ img.sketch{
 	padding-top:5%;
 	padding-bottom:10%;
 	background-color: #131313;
-	/*background: -webkit-linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); 
-	background: -o-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
-	background: -moz-linear-gradient( rgba(106,90,248,1),  rgba(88,63,186,1)); 
-	background: linear-gradient( rgba(106,90,248,1), rgba(88,63,186,1)); */
 }
 
 .work article{
@@ -401,10 +373,6 @@ img.sketch{
 	font-size: 2em;
 	font-weight: 300;
 }
-
-/*.work h4{
-	color:#6A5AF8;
-}*/
 
 .work h4
 ,.work h5{
@@ -432,7 +400,6 @@ img.sketch{
 	/*background-color: #000;*/
 	width: 30%;
 	margin-right: 4%;
-	/*height:500px;*/
 }
 
 .work ul li img{
@@ -508,7 +475,6 @@ img.sketch{
 ,aside h2{
 	margin-top: 2%;
 	margin-bottom: 2%;
-	/*text-align: center;*/
 	font-size: 1.3rem;
 }
 
@@ -519,7 +485,6 @@ img.sketch{
 }
 
 .about p{
-	/*float: left;*/
 	font-weight: 300;
 	margin-top: 1%;
 	margin-bottom: 2%;
@@ -528,17 +493,10 @@ img.sketch{
 	font-size: 1.2em;
 }
 
-/*aside{
-	width: 45%;
-	display: inline-block;
-}*/
-
-
 img.profpic {
 	width: 35%;
 	float:right;
 }
-
 
 .tools img{
 	width: 30%;
@@ -712,11 +670,9 @@ img.profpic {
 ,.testimonial h4
 ,.description h3,
 .description h4{
-	/*float:right;*/
 	text-align: center;
 	line-height: 1.5em;
 	font-size: 1em;
-	/*margin-right: 5%;*/
 }
 
 .testimonial h4
@@ -784,7 +740,6 @@ header.project{
 	font-weight: 300;
 }
 
-
 .overview h1
 ,.synopsis h1{
 	font-size: 1.8em;
@@ -814,8 +769,6 @@ header.project{
 .preview
 ,.preview2
 ,.preview3{
-	/*padding-top:15%;
-	padding-bottom:17%;*/
 	min-height: 300px;
 }
 
@@ -863,15 +816,6 @@ header.project{
 .process p:nth-of-type(2){
 	margin-top: 2%;
 }
-
-/*.synopsis2 p,
-.synopsis p
-,.synopsis3 p{
-	color:#131313;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size:1.5em;
-}*/
 
 .container2{
 	width: 60%;
@@ -935,13 +879,6 @@ header.project{
 	border-radius: 50px;*/
 	float:right;
 }
-/*
-.fed img.laptop{
-	position: absolute;
-	width: 55%;
-	top:12%;
-	right:1%;
-}*/
 
 /*************************design*************************/
 
@@ -1036,9 +973,9 @@ img.results:nth-of-type(1){
  	
  }
 
-/*.description p:nth-of-type(2){
+.description p:nth-of-type(2){
 	padding-top: 2%;
-}*/
+}
 
 /*************************other work*************************/
 
@@ -1069,7 +1006,6 @@ img.results:nth-of-type(1){
 	display: inline-block;
 	margin:2%;
 }
-
 
 /*************************footer*************************/
 
@@ -1102,7 +1038,7 @@ footer ul li:last-child{
 	margin:0;
 }
 
-/*************************media queries*************************/
+/**************************************************media queries*************************/
 
 @media screen and (max-width:1100px){
 	header img{
@@ -1124,7 +1060,6 @@ footer ul li:last-child{
 	.home h1{
 		margin:25% auto 3%;
 	}
-	
 
 	.projecthome img{
 		width: 65%;
@@ -1138,7 +1073,6 @@ footer ul li:last-child{
 
 	.work ul li:nth-of-type(2) img{
 		margin-top: 10%;
-		/*width: 40%;*/
 	}
 
 	.work ul li:last-child img{
@@ -1155,16 +1089,41 @@ footer ul li:last-child{
 
 @media screen and (max-width:770px){
 	header img{
-	width: 5%;
+		width: 5%;
 	}
 
-/*	nav.homenav button{
-		display: inline-block;
+	header nav ul{
+		display: none;
 		position: absolute;
-		top:0;
-		right:1%;
-	}*/
+		top:50px;
+		right:0;
+		z-index: 9999;
+		text-align: center;
+		background-color: #fff;
+		width: 100px
+	}
 
+	header nav ul li{
+		display: block;
+		padding:5%;
+			}
+
+	header.project nav ul li a{
+		color:#000;
+	}
+
+	header nav.homenav ul li a{
+		color:#000;
+	}
+
+	header nav button{
+		display: inline-block;
+		margin-top: 4%;
+	}
+
+	.site{
+		display: none;
+	}
 	/**********home**************/
 
 	.home{
@@ -1261,36 +1220,6 @@ footer ul li:last-child{
 
 	/**********project nav**************/
 
-	nav.homenav,
-	header.project nav{
-		position: absolute;
-		z-index: 999;
-		top:0;
-		right:0;
-		text-align: center;
-		background-color: #fcfcfc;
-	}
-
-	nav.homenav ul li ,
-	header.project nav ul li{
-		display: block;
-		position: relative;
-		z-index: 999;
-	}
-
-	header.project nav ul li a{
-		color:#131313;
-	}
-
-	nav.homenav button
-	,header nav button{
-	display: inline-block;
-	position: absolute;
-	top:0;
-	right:1%;
-	z-index: 999;
-	}
-
 	/**********project overview**************/
 	.projecthome img{
 		width: 80%;
@@ -1324,10 +1253,6 @@ footer ul li:last-child{
 		padding-top: 20%;
 	}
 
-/*	.synopsis{
-		background: url(../img/affinitymap5.jpg)no-repeat center -200px fixed;
-	}
-*/
 	.synopsis p,
 	.synopsis2 p,
 	.synopsis3 p{
@@ -1422,7 +1347,6 @@ footer ul li:last-child{
 }
 
 @media screen and (max-width:700px){
-
 	header img{
 	width: 5%;
 	}
@@ -1434,10 +1358,6 @@ footer ul li:last-child{
 		height:auto;
 	}
 
-	/*img.sketch{
-		width: 25%;
-	}*/
-
 	.work ul li {
 		width: 100%;
 		margin-bottom: 7%;
@@ -1446,7 +1366,6 @@ footer ul li:last-child{
 }
 
 @media screen and (max-width:500px){
-
 	header img{
 	width: 10%;
 	}

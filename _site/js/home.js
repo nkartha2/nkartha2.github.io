@@ -32,23 +32,28 @@ windowsize = $(window).width();
 
 ////hamburger icon
 
-	var checkWindowWidth = function() {
-		if (windowsize <= 779){
-      		$('nav.homenav ul li').css('display','none');
-      		$('nav.homenav button').off("click");
-      		$('nav.homenav button').click(function(){
-				$('nav.homenav ul li').slideToggle('slow');
-			});
- 		} else if(windowsize>=780){
-      		$('nav.homenav ul li').css('display','inline-block');
-    	}
-    };
+	// var checkWindowWidth = function() {
+	// 	if (windowsize <= 779){
+ //      		$('nav.homenav ul li').css('display','none');
+ //      		$('nav.homenav button').off("click");
+ //      		$('nav.homenav button').click(function(){
+	// 			$('nav.homenav ul li').slideToggle('slow');
+	// 		});
+ // 		} else if(windowsize>=780){
+ //      		$('nav.homenav ul li').css('display','inline-block');
+ //    	}
+ //    };
 
-	checkWindowWidth(); // fire on load
-		$( window ).resize(function(){ // fire on resize
-			windowsize = $(window).width();
-			checkWindowWidth(); // for responsive menu
+	// checkWindowWidth(); // fire on load
+	// 	$( window ).resize(function(){ // fire on resize
+	// 		windowsize = $(window).width();
+	// 		checkWindowWidth(); // for responsive menu
+	// });
+
+	$('header nav button').click(function(){
+		$('header nav ul').slideToggle('slow');
 	});
+
 
 ////changing work images on mouseenter 
 	/////world bicycle relief image to gif 
