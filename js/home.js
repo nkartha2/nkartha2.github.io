@@ -30,30 +30,25 @@ windowsize = $(window).width();
 		offset:200
 	});
 
-////hamburger icon
+////mobile menu icon
 
-	// var checkWindowWidth = function() {
-	// 	if (windowsize <= 779){
- //      		$('nav.homenav ul li').css('display','none');
- //      		$('nav.homenav button').off("click");
- //      		$('nav.homenav button').click(function(){
-	// 			$('nav.homenav ul li').slideToggle('slow');
-	// 		});
- // 		} else if(windowsize>=780){
- //      		$('nav.homenav ul li').css('display','inline-block');
- //    	}
- //    };
+	var checkWindowWidth = function() {
+		if (windowsize <= 779){
+      		$('header nav ul').css('display','none');
+      		$('header nav button').off("click");
+      		$('header nav button').click(function(){
+				$('header nav ul').slideToggle('slow');
+			});
+ 		} else if(windowsize>=780){
+      		$('header nav ul').css('display','block');
+    	}
+    };
 
-	// checkWindowWidth(); // fire on load
-	// 	$( window ).resize(function(){ // fire on resize
-	// 		windowsize = $(window).width();
-	// 		checkWindowWidth(); // for responsive menu
-	// });
-
-	$('header nav button').click(function(){
-		$('header nav ul').slideToggle('slow');
+	checkWindowWidth(); // fire on load
+		$( window ).resize(function(){ // fire on resize
+			windowsize = $(window).width();
+			checkWindowWidth(); // for responsive menu
 	});
-
 
 ////changing work images on mouseenter 
 	/////world bicycle relief image to gif 

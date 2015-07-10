@@ -28,50 +28,25 @@ $(document).ready(function(){
 		offset:200
 	});
 
- //  ////responsive nav 
-	// var checkWindowWidth = function() {
- //     var projectnav = $('header.project nav ul li');
- //     var projectbutton = $('header.project nav button');
+////mobile menu icon
 
- //  ////hamburger icon only  
- //    if (windowsize <= 779){
- //      projectnav.css('display','none');
- //      projectbutton.css('display','block');
- //      projectbutton.off("click");
-	// 	  projectbutton.click(function() {
- //        if ($('header').hasClass('header') === false) {
- //    ////hamburger icon color toggling 
- //          if (projectnav.css('display') == 'block') {
- //            projectbutton.removeClass('activeb');
- //          } else {
- //            projectbutton.addClass('activeb');
- //          }
- //        }
- //          projectnav.slideToggle("slow");
-	// 	  });
+	var checkWindowWidth = function() {
+		if (windowsize <= 779){
+      		$('header nav ul').css('display','none');
+      		$('header.project nav button').off("click");
+      		$('header.project nav button').click(function(){
+				$('header nav ul').slideToggle('slow');
+			});
+ 		} else if(windowsize>=780){
+      		$('header nav ul').css('display','block');
+    	}
+    };
 
- //    ////hamburger icon with nav - show other work options 
- //    }else if(windowsize>=780){
- //      projectnav.css('display','inline-block');
- //      // projectbutton.css('background-color','transparent');
- //      projectbutton.off("click");
- //    //   projectbutton.click(function(){
-	// 			// $('.otherwork').slideToggle("slow");
-	// 	  //  });
- //        }
- //       };
-
- //    checkWindowWidth(); // fire on load
-	// $( window ).resize(function(){ // fire on resize
-	// 	windowsize = $(window).width();
-	// 	checkWindowWidth(); // for responsive menu
-	// });
-
-	$('header nav button').click(function(){
-		$('header nav ul').slideToggle('slow');
+	checkWindowWidth(); // fire on load
+		$( window ).resize(function(){ // fire on resize
+			windowsize = $(window).width();
+			checkWindowWidth(); // for responsive menu
 	});
-
-	
 
 	////navigation animation 
 	$('a').click(function(){
