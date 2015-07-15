@@ -11,6 +11,7 @@ $(document).ready(function(){
 			if(direction==='down'){
 			////adding view site and view on github options
 				$('a.view').addClass("site");
+				$('header nav ul li:nth-of-type(1) a').removeClass('active');
 			////changing logo to black  as header moves down
 				$('header img').attr({src:"img/logoyellow.png"});
 			////changing header background color 
@@ -19,6 +20,7 @@ $(document).ready(function(){
 			////removing view site and view on github options
 				$('a.view').removeClass('site');
 				$("<a href='#'>View Site</a>").remove();
+				$('header.project nav ul li:nth-of-type(1) a').addClass('active');
 			////changing logo back to white as header moves up
 				$('header img').attr({src:"img/logow.png"});
 			////changing header back to transparent 
@@ -27,6 +29,78 @@ $(document).ready(function(){
 		},
 		offset:200
 	});
+
+	var nthtype;
+
+	function highlightNavlink(nthtype){
+			$('header nav ul li a.active').removeClass('active');
+			$('header nav ul li:nth-of-type('+nthtype+') a').addClass('active');
+	}
+
+	var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(2)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(2);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(2) a.active').removeClass('active');
+			}
+		},
+		offset:200
+	});
+
+	var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(3)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(3);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(3) a.active').removeClass('active');
+				$('header nav ul li:nth-of-type(2) a').addClass('active');
+			}
+		},
+		offset:200
+	});
+
+		var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(4)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(4);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(4) a.active').removeClass('active');
+				$('header nav ul li:nth-of-type(3) a').addClass('active');
+			}
+		},
+		offset:200
+	});
+
+	var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(5)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(5);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(5) a.active').removeClass('active');
+				$('header nav ul li:nth-of-type(4) a').addClass('active');
+			}
+		},
+		offset:450
+	});
+
+		var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(6)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(6);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(6) a.active').removeClass('active');
+				$('header nav ul li:nth-of-type(5) a').addClass('active');
+			}
+		},
+		offset:450
+	});
+
 
 ////mobile menu icon
 

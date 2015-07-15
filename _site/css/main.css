@@ -175,9 +175,10 @@ a.site button:hover{
 	color: #fcfcfc;
 }
 
-.project nav li:hover a
+header nav ul li a.active
+,.project nav li:hover a
 ,.otherwork a:hover{
-	color:#ccc;
+	color:#ccc ;
 }
 
 header nav ul li:hover a
@@ -201,7 +202,7 @@ a.site:hover{
 }
 
 
-.fp ul li:hover{
+.footerproj ul li:hover{
 	color:#fcfcfc;
 	background-color: #ccc;
 }
@@ -222,6 +223,7 @@ button.activeb span{
 .header nav ul li a{
 	color:#EFE234;
 }
+
 
 .header nav ul li:hover a{
 	color:#6A5AF8 ;

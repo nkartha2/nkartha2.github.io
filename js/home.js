@@ -2,7 +2,6 @@ $(document).ready(function(){
 
 windowsize = $(window).width();
 
-
 ////navigation animation 
 	$('a').click(function(){
     $('html, body').animate({
@@ -18,11 +17,15 @@ windowsize = $(window).width();
 			if(direction==='down'){
 			////changing header background color 
 				$('header').addClass('header');
+			////changing active nav link to work 
+				$('header nav ul li:nth-of-type(1) a').removeClass('active');
 				////changing logo back to white as header moves up
 				$('header img').attr({src:"img/logoyellow.png"});
 			}else if(direction==='up'){
 			////changing header back to transparent 
 				$('header').removeClass('header');
+				////changing active nav link to home
+				$('header nav ul li:nth-of-type(1) a').addClass('active');
 				////changing logo back to white as header moves up
 				$('header img').attr({src:"img/logo.png"});
 			}
@@ -30,7 +33,66 @@ windowsize = $(window).width();
 		offset:200
 	});
 
-////mobile menu icon
+///waypoint for nav active links
+	var nthtype;
+
+	function highlightNavlink(nthtype){
+			$('header nav ul li a.active').removeClass('active');
+			$('header nav ul li:nth-of-type('+nthtype+') a').addClass('active');
+	}
+
+	var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(2)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(2);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(2) a.active').removeClass('active');
+			}
+		},
+		offset:200
+	});
+
+	var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(3)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(3);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(3) a.active').removeClass('active');
+				$('header nav ul li:nth-of-type(2) a').addClass('active');
+			}
+		},
+		offset:200
+	});
+
+		var waypoint  = new Waypoint({
+		element: $('section:nth-of-type(4)'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(4);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(4) a.active').removeClass('active');
+				$('header nav ul li:nth-of-type(3) a').addClass('active');
+			}
+		},
+		offset:200
+	});
+
+		var waypoint  = new Waypoint({
+		element: $('footer'),
+		handler:function(direction){
+			if(direction==='down'){
+				highlightNavlink(5);
+			}else if(direction==='up'){
+				$('header nav ul li:nth-of-type(5) a.active').removeClass('active');
+				$('header nav ul li:nth-of-type(4) a').addClass('active');
+			}
+		},
+		offset:650
+	});
+
+// ////mobile menu icon
 
 	var checkWindowWidth = function() {
 		if (windowsize <= 779){
