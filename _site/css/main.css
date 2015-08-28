@@ -277,7 +277,6 @@ header nav ul li a{
 /*************************home*************************/
 
 .home{
-	/*max-width: 1300px;*/
 	margin:0 auto;
 	background: url(../img/tinygrid.png) fixed;
 	min-height: 700px;
