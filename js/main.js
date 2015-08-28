@@ -27,7 +27,7 @@ $(document).ready(function(){
 				$('header').removeClass('header');
 			}
 		},
-		offset:200
+		offset:300
 	});
 
 	var nthtype;
