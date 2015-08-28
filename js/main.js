@@ -27,7 +27,7 @@ $(document).ready(function(){
 				$('header').removeClass('header');
 			}
 		},
-		offset:300
+		offset:60
 	});
 
 	var nthtype;
@@ -46,7 +46,7 @@ $(document).ready(function(){
 				$('header nav ul li:nth-of-type(2) a.active').removeClass('active');
 			}
 		},
-		offset:200
+		offset:300
 	});
 
 	var waypoint  = new Waypoint({
