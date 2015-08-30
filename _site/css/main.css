@@ -493,6 +493,14 @@ img.sketch{
 	font-size: 1.3rem;
 }
 
+aside ul:nth-of-type(1) li{
+	text-decoration: underline;
+}
+
+aside ul:nth-of-type(1) a:hover{
+	color:#6A5AFe;
+}
+
 .about h3{
 	font-size: 1rem;
 	font-family: 'Lato', sans-serif;
