@@ -122,6 +122,7 @@ header nav.homenav button span{
 }
 
 a.site button {
+	text-transform: uppercase;
 	display: inline-block;
 	color:#fcfcfc;
 	border: solid 1px #fcfcfc;
@@ -131,11 +132,11 @@ a.site button {
 	margin-left: 5%;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
-	font-size: 0.9em;
+	font-size: 0.75em;
 }
 
 a.site button:hover{
-	background-color: #fcfcfc;
+	background-color: #ccc;
 	color: #6A5AF8;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
