@@ -855,20 +855,23 @@ header.project{
 
 .fed h1
 ,.research h1{
-	font-size: 2em;
+	font-size: 1.75em;
+    line-height: 1.35em;
 	margin:0;
 	margin-bottom: 5%;
 }
 
 .fed ul
 ,.research ul{
-	width: 30%;
+	width: 39%;
 	display: inline-block;
 	font-size: 1.3em;
 }
 
 .fed ul li,
 .research ul li{
+	font-weight: 300;
+	line-height: 1.25em;
 	list-style: square;
 	margin:5%;
 }
