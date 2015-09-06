@@ -13,39 +13,50 @@
       <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="clearfix">
+    <header class="clearfix">
       <h1 class="branding"><a href="http://nkartha2.github.io/">Neely's Notes</a></h1>
        <div class="siteinfo">
         <a href=”mailto:nkartha2@gmail.com”><img src="images/emailicon.png"></a>
         <a href="http://twitter.com/intent/tweet?screen_name=neelykartha"><img src="images/twittericon.png"></a>
-      </div>
-    </div>
+      </header>
+    <section>
       <h5>First Post: Being Mobile First : Length units</h5>
-
       <p>People in the design community have not been hinting at being mobile first so much as yelling it through the streets or sagely telling newcomers this phrase like it is a cautionary tale. As a newbie myself, I’ve heard it and now I need to practice it. But HOW? Here’s what I’ve picked up on (if you see or hear something incorrect or notice something missing in this picture, SAY SOMETHING…. Please:</p>
-   <h4>1. Font-sizing: relative font-sizing</h4>
-    <ol class="relabsdef">
-      <li>Definitions: </li>
-      <li>Relative length: amount of space that the content consumes is in relation to another length</li>
-      <li>Absolute length: fixed size that does not change according to screen size;  maintains size according to the prescribed unit value </li>
-    </ol>
+    </section>
+    <section>
+    <h4>1. Font-sizing: relative font-sizing</h4>
+    <dl class="relabsdef">
+      <h2>Definitions: </h2>
+      <dt>Relative length:</dt>
+      <dd>amount of space that the content consumes is in relation to another length</dd>
+      <dt>Absolute length:<dt>
+      <dd>fixed size that does not change according to screen size;  maintains size according to the prescribed unit value </dd>
+    </dl>
     <p>
       Purpose: 
       Using relative lengths will help scale between different output devices/mediums; for example, using relative units will help manage space between desktop, laptop, and mobile phone; used for “responsive design” 
-
+    </p>
       <!-- Who cares about absolute lengths if you’ve got relative, right? WRONG. They’re not the best for responsive design but they can still be used for media queries, CSS for print media, in cases where the output medium is known, and to read old-school CSS  -->
       Types: 
-      Relative : em, rem, ex, vh, vw, vmin, vmax 
+      Relative : <ul>
+      <li>em,</li>
+      <li>rem,</li>
+      <li>ex,</li>
+      <li>vh,</li>
+      <li> vw,</li>
+      <li> vmin,</li>
+      <li> vmax</li>
+    </ul>
       Absolute: px, inches, millimeters, centimeters, points, picas
     </p>
   <div id="maincontent">
-  <ol>
-    <h6><li>Ex:</li></h6>
-    <h5><li>Etymology:</h5> X-height</li>
+  <dl>
+    <dt>Ex</dt>
+    <dd><h2>Etymology:</h2>X-height</dd>
     <h5><li>Value:</h5>based on the size of the element’s font’s x size; does not resize with the window; heavily dependent on font-family </li>
     <h5><li>Pros: </h5>possibly helpful in typesetting – fonts with the same ex size might be more legible 
     ……………..help me out with more uses of this unit please </li>
-  </ol>
+  </dl>
   <ol>
     <h6><li>Em: </li></h6>
     <h5><li>Etymology: </h5>Why is it called “em”? This used to be based on the width of the element’s typeface’s capital letter “M”; now it is based on vertical space a letter consumes – tangerine </li>
@@ -85,38 +96,48 @@ no compounding effect; based on root element</li>
 
 </div>
 
-<h6>Resources/Non-Newbies</h6>
-<ul class="references">
-  <li><a href=http://css-tricks.com/why-ems/>CSS Tricks Why ems</a></li>
-<li><a href=http://www.w3.org/TR/css3-values/#font-relative-lengths>w3.org</a></li>
-<li><a href=http://css-tricks.com/the-lengths-of-css/>CSS Tricks Lengths of CSS</a></li>
-<li><a href=http://teamtreehouse.com/library/css-foundations/values-and-units/relative-length-units-2>Team Treehouse</a></li>
-<li><a href=http://www.blooberry.com/indexdot/css/syntax/units/rellength.htm>Blooberry</a></li>
-<li><a href=http://www.adamkaplan.me/projects/units-of-measure.html>Adam Kaplan Blog Units of Measure</a></li>
-<li><a href=http://www.sitepoint.com/new-css3-relative-font-size/>Sitepoint</a></li>
-<li><a href=http://codeitdown.com/responsive-font-size-css/>Codeitdown</a></li>
-<li><a href=http://v1.jontangerine.com/log/2007/09/the-incredible-em-and-elastic-layouts-with-css>Incredible em and elastic layouts with css</a></li>
-<li><a href=http://sbpoley.home.xs4all.nl/webmatters/emex.html>Em Ex</a></li>
-</ul>
-  
-</p>
-      </li>
+  <h6>Resources/Non-Newbies</h6>
+  <ul class="references">
+    <li>
+      <a href=http://css-tricks.com/why-ems/>CSS Tricks Why ems</a>
+    </li>
+    <li>
+      <a href=http://www.w3.org/TR/css3-values/#font-relative-lengths>w3.org</a>
+    </li>
+    <li>
+      <a href=http://css-tricks.com/the-lengths-of-css/>CSS Tricks Lengths of CSS</a>
+    </li>
+    <li>
+      <a href=http://teamtreehouse.com/library/css-foundations/values-and-units/relative-length-units-2>Team Treehouse</a>
+    </li>
+    <li>
+      <a href=http://www.blooberry.com/indexdot/css/syntax/units/rellength.htm>Blooberry</a>
+    </li>
+    <li>
+      <a href=http://www.adamkaplan.me/projects/units-of-measure.html>Adam Kaplan Blog Units of Measure</a>
+    </li>
+    <li>
+      <a href=http://www.sitepoint.com/new-css3-relative-font-size/>Sitepoint</a>
+    </li>
+    <li>
+      <a href=http://codeitdown.com/responsive-font-size-css/>Codeitdown</a>
+    </li>
+    <li>
+      <a href=http://v1.jontangerine.com/log/2007/09/the-incredible-em-and-elastic-layouts-with-css>Incredible em and elastic layouts with css</a>
+    </li>
+    <li>
+      <a href=http://sbpoley.home.xs4all.nl/webmatters/emex.html>Em Ex</a></li>
   </ul>
-
-     <div class="footer">
-            <div class="contact">
-              <p>
-                Neely Kartha
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/nkartha2">Github</a>
-                <a href="https://twitter.com/neelykartha">Twitter</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
+  <footer>
+      <h2>
+        Neely Kartha
+      </h2>
+    </div>
+        <a href="https://github.com/nkartha2">Github</a>
+        <a href="https://twitter.com/neelykartha">Twitter</a>
+    </div>
+    </div>
+    </div>
+  </footer>
+  </body>
 </html>
