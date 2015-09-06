@@ -9,19 +9,10 @@
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;}
-
-
-* {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
-html, body { 
-          height: 100%; }
-body {
-  font-family: 'Vollkorn', serif;
-  margin: 0 3% 0;
-  }
+
+
 
 /***Clearfix by Nicolas Gallagher***/
 .clearfix:before,
@@ -38,22 +29,16 @@ body {
   *zoom:1;
 }
 
-/*******/
+html, 
+body{ 
+  width: 100%; 
+}
 
-.branding,.siteinfo.siteinfo img{display: inline-block;}
+body {
+  font-family: 'Vollkorn', serif;
+  margin: 0 3% 0;
+  }
 
-.branding{
-          float:left;
-        margin: 2%;}
-/*
-.siteinfo{
-          text-align: right;}*/
-
-.siteinfo img{
-    height:5%;
-    width:5%;
-    margin: 2%;
-    float: right;}
 
 h1{font-family: 'Vollkorn', serif;
 /* 'Indie Flower', cursive;*/
@@ -82,12 +67,18 @@ h6{color:red;
   font-size: 1rem;}
 
 
+a{ 
+  color: #000;
+  text-decoration: none; 
+}
 
+a:hover{ 
+  color: #000; 
+}
 
-a         { color: #000;
-            text-decoration: none; }
-a:hover   { color: #000; }
-a:visited { color: #000; }
+a:visited{
+  color: #000;
+}
 
 .sitecontent{
               margin: 0% 20% 0;
