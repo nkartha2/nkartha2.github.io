@@ -1169,6 +1169,12 @@ footer ul li:last-child{
 		margin-bottom: 3%;
 		height: 300px;
 	}
+
+	.work ul li:last-child svg{
+	width: 45%;
+    margin-left: 25%;
+	/*padding:0;*/
+	}
 /**********about**************/
 
 	.about h1, 
@@ -1404,10 +1410,6 @@ footer ul li:last-child{
 	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
 	background-size: 450px 600px;
 	min-height: 520px;
-	}
-
-	.work svg{
-		display: none;
 	}
 
 }
