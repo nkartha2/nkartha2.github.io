@@ -396,7 +396,7 @@ img.sketch{
 
 .work h4{
 	color:#fcfcfc;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.3em;
 	/*font-family: 'Lato', sans-serif;*/
 }
@@ -404,6 +404,7 @@ img.sketch{
  .work h5{
 	color:#fcfcfc;
 	font-weight: 300;
+	line-height: 1.35em;
 	font-family: 'Lato', sans-serif;
 }
 
