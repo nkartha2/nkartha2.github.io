@@ -437,8 +437,8 @@ img.sketch{
 
 .work ul li:last-child svg{
 	display: none;
-	margin:16% 32% 0; 
-	width: 33%;
+	margin: 15.5% 31.5% 0;
+    width: 33%;
 }
 
 .path {
@@ -1103,8 +1103,8 @@ footer ul li:last-child{
 	}
 
 	.work ul li:last-child svg{
-	width: 50%;
-	margin-left: 20%;
+	width: 47%;
+    margin-left: 25%;
 	/*padding:0;*/
 	}
 }
@@ -1404,6 +1404,10 @@ footer ul li:last-child{
 	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
 	background-size: 450px 600px;
 	min-height: 520px;
+	}
+
+	.work svg{
+		display: none;
 	}
 
 }
