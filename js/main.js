@@ -37,6 +37,35 @@ $(document).ready(function(){
 			$('header nav ul li:nth-of-type('+nthtype+') a').addClass('active');
 	}
 
+	
+////mobile menu icon
+
+	var checkWindowWidth = function() {
+		if (windowsize <= 779){
+      		$('header nav ul').css('display','none');
+      		$('header.project nav button').off("click");
+      		$('header.project nav button').click(function(){
+				$('header nav ul').slideToggle('slow');
+			});
+ 		} else if(windowsize>=780){
+      		$('header nav ul').css('display','block');
+    	}
+    };
+
+	checkWindowWidth(); // fire on load
+		$( window ).resize(function(){ // fire on resize
+			windowsize = $(window).width();
+			checkWindowWidth(); // for responsive menu
+	});
+
+	////navigation animation 
+	$('a').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+		}, 500);
+	    return false;
+	});
+
 	var waypoint  = new Waypoint({
 		element: $('section:nth-of-type(2)'),
 		handler:function(direction){
@@ -88,46 +117,17 @@ $(document).ready(function(){
 		offset:450
 	});
 
-		var waypoint  = new Waypoint({
-		element: $('section:nth-of-type(6)'),
-		handler:function(direction){
-			if(direction==='down'){
-				highlightNavlink(6);
-			}else if(direction==='up'){
-				$('header nav ul li:nth-of-type(6) a.active').removeClass('active');
-				$('header nav ul li:nth-of-type(5) a').addClass('active');
-			}
-		},
-		offset:450
-	});
-
-
-////mobile menu icon
-
-	var checkWindowWidth = function() {
-		if (windowsize <= 779){
-      		$('header nav ul').css('display','none');
-      		$('header.project nav button').off("click");
-      		$('header.project nav button').click(function(){
-				$('header nav ul').slideToggle('slow');
-			});
- 		} else if(windowsize>=780){
-      		$('header nav ul').css('display','block');
-    	}
-    };
-
-	checkWindowWidth(); // fire on load
-		$( window ).resize(function(){ // fire on resize
-			windowsize = $(window).width();
-			checkWindowWidth(); // for responsive menu
-	});
-
-	////navigation animation 
-	$('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-		}, 500);
-	    return false;
+	var waypoint  = new Waypoint({
+	element: $('section:nth-of-type(6)'),
+	handler:function(direction){
+		if(direction==='down'){
+			highlightNavlink(6);
+		}else if(direction==='up'){
+			$('header nav ul li:nth-of-type(6) a.active').removeClass('active');
+			$('header nav ul li:nth-of-type(5) a').addClass('active');
+		}
+	},
+	offset:450
 	});
 
 });
