@@ -881,10 +881,12 @@ header.project{
 .research ul
 {
 	float:right;
+	margin-left: 3%;
+	margin-top: 5%;
 }
 
 .research img{
-	width: 60%;
+	width: 55%;
 	float:left;
 }
 
