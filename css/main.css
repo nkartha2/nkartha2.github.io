@@ -1409,9 +1409,14 @@ footer ul li:last-child{
 	}
 
 	.atmos{
-	background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
-	background-size: 450px 600px;
-	min-height: 520px;
+		background:url(../img/atmosheromobile.jpg) no-repeat center -50px fixed;
+		background-size: 450px 600px;
+		min-height: 520px;
 	}
 
+	.preview,
+	.preview3,
+	.preview2{
+		display: none;
+	}
 }

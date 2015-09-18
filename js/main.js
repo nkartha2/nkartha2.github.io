@@ -46,9 +46,11 @@ $(document).ready(function(){
       		$('header.project nav button').off("click");
       		$('header.project nav button').click(function(){
 				$('header nav ul').slideToggle('slow');
+				$('header.project nav ul li a').css('padding', '25%');
 			});
  		} else if(windowsize>=780){
       		$('header nav ul').css('display','block');
+			$('header.project nav ul li a').css('padding', '0');
     	}
     };
 

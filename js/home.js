@@ -100,9 +100,11 @@ windowsize = $(window).width();
       		$('header nav button').off("click");
       		$('header nav button').click(function(){
 				$('header nav ul').slideToggle('slow');
+				$('header nav ul li').css('padding', '15%');
 			});
  		} else if(windowsize>=780){
       		$('header nav ul').css('display','block');
+      		$('header nav ul li').css('padding', '0');
     	}
     };
 
