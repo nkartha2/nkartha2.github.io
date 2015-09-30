@@ -34,9 +34,14 @@ body{
 }
 
 body{
-  font-family: $font-family--primary;
+  font-family: $font-family--secondary;
+  background: url(../img/tinygrid.png) repeat repeat;
   /*font-family: 'Vollkorn', serif;*/
   margin: 0 3% 0;
   /*background: url(../img/tinygrid.png) repeat fixed; */
+}
+
+h1{
+  font-family: $font-family--primary; 
 }
 
