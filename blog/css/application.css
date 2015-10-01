@@ -21,6 +21,10 @@
 .clearfix {
   *zoom: 1; }
 
+a {
+  color: #000;
+  text-decoration: none; }
+
 html,
 body {
   width: 100%; }
@@ -28,11 +32,25 @@ body {
 body {
   font-family: "Lato", serif;
   background: url(../img/tinygrid.png) repeat repeat;
-  /*font-family: 'Vollkorn', serif;*/
-  margin: 0 3% 0;
-  /*background: url(../img/tinygrid.png) repeat fixed; */ }
+  margin: 0 3% 0; }
+
+nav ul {
+  float: right;
+  width: 25%; }
+
+nav ul li {
+  list-style: none;
+  width: 15%;
+  display: inline-block; }
+
+nav ul li img {
+  width: 50%; }
+
+i {
+  color: #000; }
 
 h1 {
+  text-transform: uppercase;
   font-family: "Oswald", sans-serif; }
 
 /*# sourceMappingURL=application.css.map */
