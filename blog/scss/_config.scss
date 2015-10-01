@@ -15,3 +15,8 @@ $violet: #6A5AF8;
 $yellow: #EFE234;
 $gray: #ccc;
 
+@mixin headers{
+	text-transform: uppercase;
+	color: #000;
+	font: $font-family--primary;
+}

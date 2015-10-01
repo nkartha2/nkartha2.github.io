@@ -63,8 +63,8 @@ i{
   color:#000;
 }
 
-h1{
-  text-transform: uppercase;
-  font-family: $font-family--primary; 
+h1, h2{
+  @include headers;
 }
+  
 

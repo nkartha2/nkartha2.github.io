@@ -49,8 +49,9 @@ nav ul li img {
 i {
   color: #000; }
 
-h1 {
+h1, h2 {
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif; }
+  color: #000;
+  font: "Oswald", sans-serif; }
 
 /*# sourceMappingURL=application.css.map */
