@@ -44,6 +44,7 @@ body{
   margin: 0 3% 0;
 }
 
+
 nav ul{
   float:right;
   width: 25%;
@@ -59,6 +60,12 @@ nav ul li img{
   width: 50%;
 }
 
+.posts{
+  @extend nav; 
+  width: 50%;
+  margin: 0 auto;
+}
+
 i{
   color:#000;
 }
@@ -66,5 +73,4 @@ i{
 h1, h2{
   @include headers;
 }
-  
 

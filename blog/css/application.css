@@ -34,17 +34,21 @@ body {
   background: url(../img/tinygrid.png) repeat repeat;
   margin: 0 3% 0; }
 
-nav ul {
+nav ul, .posts ul {
   float: right;
   width: 25%; }
 
-nav ul li {
+nav ul li, .posts ul li {
   list-style: none;
   width: 15%;
   display: inline-block; }
 
-nav ul li img {
+nav ul li img, .posts ul li img {
   width: 50%; }
+
+.posts {
+  width: 50%;
+  margin: 0 auto; }
 
 i {
   color: #000; }
