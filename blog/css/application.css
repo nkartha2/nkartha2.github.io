@@ -37,8 +37,7 @@ body {
 nav ul, .posts ul {
   float: right;
   width: 35%; }
-
-nav ul li, .posts ul li {
+nav li, .posts li {
   list-style: none;
   width: 30%;
   display: inline-block; }
