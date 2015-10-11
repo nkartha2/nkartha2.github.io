@@ -45,18 +45,16 @@ body{
 }
 
 
-nav {
-  ul{
+nav ul{
     float:right;
     width: 35%;
   }
-  li{
+
+nav ul li{
   list-style: none;
   width: 30%;
   display: inline-block;
   }
-
-} 
 
 nav ul li img{
   width: 100%;
@@ -64,6 +62,14 @@ nav ul li img{
 
 nav ul li:last-child img{
   width: 15%;
+}
+
+.posts ul li{
+  display: block;
+}
+
+a:hover{
+  color:$violet ;
 }
 
 

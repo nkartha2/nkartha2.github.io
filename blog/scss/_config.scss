@@ -1,8 +1,8 @@
 //Font Stacks 
 $font-url--google1: 'https://fonts.googleapis.com/css?family=Oswald:300,400';
-$font-url--google2: 'http://fonts.googleapis.com/css?family=Lato:300,700';
+$font-url--google2: 'https://fonts.googleapis.com/css?family=Merriweather';
 $font-family--primary: 'Oswald', sans-serif; 
-$font-family--secondary: 'Lato', serif; 
+$font-family--secondary: 'Merriweather', serif;
 
 $font-weight--thin: 100 ; 
 $font-weight--light: 300 ;
@@ -18,5 +18,5 @@ $gray: #ccc;
 @mixin headers{
 	text-transform: uppercase;
 	color: #000;
-	font: $font-family--primary;
+	font-family: $font-family--primary;
 }
